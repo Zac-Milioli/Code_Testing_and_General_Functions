@@ -1,6 +1,3 @@
-import pandas as pd
-
-
 with open('BRA_AC_Rio.Branco-Medici.Intl.AP.829170_TMYx.2007-2021.epw', "r+") as f:
     d = f.readlines()
     f.seek(0)

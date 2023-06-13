@@ -1,6 +1,8 @@
+# Estudando formas simples de remover linhas ou colunas de tabelas utilizando lambda
+
 import pandas as pd
 
-df = pd.read_csv('city_data_for_test.csv')
+df = pd.read_csv(r'csv_files/city_data_for_test.csv')
 
 string1 = 'Acre'
 string2 = 'TO'

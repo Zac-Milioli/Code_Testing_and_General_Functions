@@ -1,3 +1,6 @@
+# Utilizando arquivos do dir csv_files, recolhe e quebra os arquivos, gerando uma grande tabela com
+# todos os dados
+
 import pandas as pd
 from datetime import date
 

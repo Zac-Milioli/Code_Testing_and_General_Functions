@@ -34,7 +34,8 @@ def energia_mecanica(m, g, h, v):
     e = energia_potencial(m, g, h) + energia_cinetica(m, v)
     return e
 
-def select_option(opt):
+def menu(execute):
+    opt = int(input(interface))
     if opt == 1:
         x0 = int(input('\nInsira a posição inicial: '))
         v = int(input('\nInsira a velocidade: '))
@@ -50,6 +51,35 @@ def select_option(opt):
         a = int(input('\nInsira a aceleração: '))
         delta_x = int(input('\nInsira a variação da posição: '))
         result = torricelli(v0, a, delta_x)
+    elif opt == 4:
+        m = int(input('\nInsira a massa: '))
+        g = int(input('\nInsira um valor para a gravidade: '))
+        h = int(input('\nInsira a altura: '))
+        result = energia_potencial(m, g, h)
+    elif opt == 5:
+        m = int(input('\nInsira a massa'))
+        v = int(input('\nInsira a velocidade'))
+        result = energia_cinetica(m, v)
+    elif opt == 6:
+        m = int(input('\nInsira a massa: '))
+        g = int(input('\nInsira um valor para a gravidade: '))
+        h = int(input('\nInsira a altura: '))
+        v = int(input('\nInsira a velocidade'))
+        result = energia_mecanica(m, g, h, v)
     else:
+        execute = False
         return '\nObrigado por usar o programa de cálculos físicos do Zac!'
     return result
+
+interface = '''\nBem vindo ao programa de cálculos físicos automáticos!
+Escolha uma opção de fórmula:
+    [1] Movimento Retilíneo Uniforme
+    [2] Movimento Uniformemente Variado
+    [3] Torriceli
+    [4] Energia Potencial
+    [5] Energia Cinética
+    [6] Energia Mecânica Total
+    [ENTER] Encerrar o programa\n\n...'''
+execute = True
+while execute:
+    print(menu(execute))

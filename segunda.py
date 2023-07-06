@@ -1,3 +1,5 @@
+# Código feito em uma atividade para um amigo, não lembro o que faz
+
 def IPclass(ip):
     ip = ip.split('.')
     ip = ip[0]

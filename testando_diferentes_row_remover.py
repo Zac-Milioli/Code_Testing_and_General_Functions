@@ -1,3 +1,5 @@
+# Catalogando diferentes maneiras de manipular tabelas - funções para remover linhas
+
 import pandas as pd
 import numpy
 

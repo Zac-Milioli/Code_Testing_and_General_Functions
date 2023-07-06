@@ -1,3 +1,5 @@
+# Isto era é a primeira questão de uma atividade de programação que fiz para um amigo, mas não tenho ideia do que faz esse código agora
+
 def minhaCifra(p, c):
     cifra = ''
     tab = []

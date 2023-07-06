@@ -1,3 +1,5 @@
+# API que abre um meme aleatório
+
 import requests
 from random import randrange
 from io import BytesIO

@@ -1,3 +1,4 @@
+# Feita em atividade, não lembro o que faz
 
 n = int(input())
 cima = 1

@@ -40,13 +40,6 @@ lat = uf_line.iloc[0]['lat']
 lon = uf_line.iloc[0]['lon']
 tz = uf_line.iloc[0]['tz']
 alt = uf_line.iloc[0]['alt']
-# city = df_city.loc()
-# region = df_city.loc()
-# country = df_city.loc()
-# lat = df_city.loc()
-# lon = df_city.loc()
-# tz = df_city.loc()
-# alt = df_city.loc()
 
 result = {'city': city, 'region': region, 'country': country, 'lat': lat, 'lon': lon, 'tz': tz, 'alt': alt}
 

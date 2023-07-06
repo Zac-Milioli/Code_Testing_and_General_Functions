@@ -1,3 +1,5 @@
+# Um cronometro em python
+
 import os
 import time
 

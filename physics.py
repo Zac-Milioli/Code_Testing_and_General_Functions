@@ -1,3 +1,5 @@
+# Código para selecionar uma fórmula física, passar os valores e retornar o resultado
+
 # MRU   x = x0 + v*t
 # MUV   x = v0 + a*t
 # Torricelli v² = v0² + 2*a*Deltax

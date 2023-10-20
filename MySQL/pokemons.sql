@@ -1,4 +1,4 @@
---MADE WHILE WATCHING https://www.youtube.com/watch?v=HXV3zeQKqGY&list=WL&index=17&t=8845s
+--MADE USING AS REFERENCE https://www.youtube.com/watch?v=HXV3zeQKqGY&list=WL&index=17&t=8845s
 
 CREATE TABLE pkmn (
     pkmn_id INT AUTO_INCREMENT,

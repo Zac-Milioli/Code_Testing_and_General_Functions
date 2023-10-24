@@ -1,0 +1,1678 @@
+Program Version:,EnergyPlus, Version 22.2.0-c249759bad, YMD=2023.10.23 15:08
+Tabular Output Report in Format: ,Comma
+
+Building:,unifamiliar
+Environment:,ANO ** Sao.Paulo-Congonhas.AP SP BRA SRC-TMYx WMO#=837800
+
+----------------------------------------------------------------------------------------------------
+REPORT:,Annual Building Utility Performance Summary
+FOR:,Entire Facility
+Values gathered over      8760.00 hours
+
+Site and Source Energy
+
+,,Total Energy [kWh],Energy Per Total Building Area [kWh/m2],Energy Per Conditioned Building Area [kWh/m2]
+,Total Site Energy,4072.01,94.18,105.54
+,Net Site Energy,4072.01,94.18,105.54
+,Total Source Energy,6045.57,139.83,156.70
+,Net Source Energy,6045.57,139.83,156.70
+
+
+Site to Source Energy Conversion Factors
+
+,,Site=>Source Conversion Factor
+,Electricity,3.167
+,Natural Gas,1.084
+,District Cooling,1.056
+,District Heating,3.613
+,Steam,1.200
+,Gasoline,1.050
+,Diesel,1.050
+,Coal,1.050
+,Fuel Oil No 1,1.050
+,Fuel Oil No 2,1.050
+,Propane,1.050
+,Other Fuel 1,1.000
+,Other Fuel 2,1.000
+
+
+Building Area
+
+,,Area [m2]
+,Total Building Area,43.24
+,Net Conditioned Building Area,38.58
+,Unconditioned Building Area,4.66
+
+
+End Uses
+
+,,Electricity [kWh],Natural Gas [kWh],Gasoline [kWh],Diesel [kWh],Coal [kWh],Fuel Oil No 1 [kWh],Fuel Oil No 2 [kWh],Propane [kWh],Other Fuel 1 [kWh],Other Fuel 2 [kWh],District Cooling [kWh],District Heating [kWh],Water [m3]
+,Heating,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,96.69,0.00
+,Cooling,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,3265.06,0.00,0.00
+,Interior Lighting,359.86,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00
+,Exterior Lighting,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00
+,Interior Equipment,350.40,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00
+,Exterior Equipment,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00
+,Fans,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00
+,Pumps,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00
+,Heat Rejection,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00
+,Humidification,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00
+,Heat Recovery,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00
+,Water Systems,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00
+,Refrigeration,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00
+,Generators,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00
+,,,,,,,,,,,,,,
+,Total End Uses,710.26,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,3265.06,96.69,0.00
+Note: District heat appears to be the principal heating source based on energy usage.
+
+
+End Uses By Subcategory
+
+,,Subcategory,Electricity [kWh],Natural Gas [kWh],Gasoline [kWh],Diesel [kWh],Coal [kWh],Fuel Oil No 1 [kWh],Fuel Oil No 2 [kWh],Propane [kWh],Other Fuel 1 [kWh],Other Fuel 2 [kWh],District Cooling [kWh],District Heating [kWh],Water [m3]
+,Heating,General,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,96.69,0.00
+,Cooling,General,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,3265.06,0.00,0.00
+,Interior Lighting,GeneralLights,359.86,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00
+,Exterior Lighting,General,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00
+,Interior Equipment,General,350.40,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00
+,Exterior Equipment,General,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00
+,Fans,General,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00
+,Pumps,General,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00
+,Heat Rejection,General,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00
+,Humidification,General,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00
+,Heat Recovery,General,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00
+,Water Systems,General,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00
+,Refrigeration,General,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00
+,Generators,General,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00
+
+
+End Uses By Space Type
+
+,,Space Type,Electricity [kWh],Natural Gas [kWh],Gasoline [kWh],Diesel [kWh],Coal [kWh],Fuel Oil No 1 [kWh],Fuel Oil No 2 [kWh],Propane [kWh],Other Fuel 1 [kWh],Other Fuel 2 [kWh],District Cooling [kWh],District Heating [kWh],Water [m3]
+,Heating,Unassigned,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,96.69,0.00
+,Cooling,Unassigned,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,3265.06,0.00,0.00
+,Interior Lighting,GENERAL,359.86,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00
+,Exterior Lighting,Unassigned,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00
+,Interior Equipment,GENERAL,350.40,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00
+,Exterior Equipment,Unassigned,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00
+,Fans,Unassigned,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00
+,Pumps,Unassigned,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00
+,Heat Rejection,Unassigned,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00
+,Humidification,Unassigned,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00
+,Heat Recovery,Unassigned,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00
+,Water Systems,Unassigned,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00
+,Refrigeration,Unassigned,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00
+,Generators,Unassigned,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00
+
+
+Normalized Metrics
+Utility Use Per Conditioned Floor Area
+
+,,Electricity Intensity [kWh/m2],Natural Gas Intensity [kWh/m2],Gasoline Intensity [kWh/m2],Diesel Intensity [kWh/m2],Coal Intensity [kWh/m2],Fuel Oil No 1 Intensity [kWh/m2],Fuel Oil No 2 Intensity [kWh/m2],Propane Intensity [kWh/m2],Other Fuel 1 Intensity [kWh/m2],Other Fuel 2 Intensity [kWh/m2],District Cooling Intensity [kWh/m2],District Heating Intensity [kWh/m2],Water Intensity [m3/m2]
+,Lighting,9.33,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00
+,HVAC,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,84.63,2.51,0.00
+,Other,9.08,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00
+,Total,18.41,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,84.63,2.51,0.00
+
+
+Utility Use Per Total Floor Area
+
+,,Electricity Intensity [kWh/m2],Natural Gas Intensity [kWh/m2],Gasoline Intensity [kWh/m2],Diesel Intensity [kWh/m2],Coal Intensity [kWh/m2],Fuel Oil No 1 Intensity [kWh/m2],Fuel Oil No 2 Intensity [kWh/m2],Propane Intensity [kWh/m2],Other Fuel 1 Intensity [kWh/m2],Other Fuel 2 Intensity [kWh/m2],District Cooling Intensity [kWh/m2],District Heating Intensity [kWh/m2],Water Intensity [m3/m2]
+,Lighting,8.32,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00
+,HVAC,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,75.52,2.24,0.00
+,Other,8.10,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00
+,Total,16.43,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,75.52,2.24,0.00
+
+
+Electric Loads Satisfied
+
+,,Electricity [kWh],Percent Electricity [%]
+,Fuel-Fired Power Generation,0.000,0.00
+,High Temperature Geothermal*,0.000,0.00
+,Photovoltaic Power,0.000,0.00
+,Wind Power,0.000,0.00
+,Power Conversion,0.000,0.00
+,Net Decrease in On-Site Storage,0.000,0.00
+,Total On-Site Electric Sources,0.000,0.00
+,,,
+,Electricity Coming From Utility,710.256,100.00
+,Surplus Electricity Going To Utility,0.000,0.00
+,Net Electricity From Utility,710.256,100.00
+,,,
+,Total On-Site and Utility Electric Sources,710.256,100.00
+,Total Electricity End Uses,710.256,100.00
+
+
+On-Site Thermal Sources
+
+,,Heat [kWh],Percent Heat [%]
+,Water-Side Heat Recovery,0.00,
+,Air to Air Heat Recovery for Cooling,0.00,
+,Air to Air Heat Recovery for Heating,0.00,
+,High-Temperature Geothermal*,0.00,
+,Solar Water Thermal,0.00,
+,Solar Air Thermal,0.00,
+,Total On-Site Thermal Sources,0.00,
+
+
+Water Source Summary
+
+,,Water [m3],Percent Water [%]
+,Rainwater Collection,0.00,-
+,Condensate Collection,0.00,-
+,Groundwater Well,0.00,-
+,Total On Site Water Sources,0.00,-
+,-,-,-
+,Initial Storage,0.00,-
+,Final Storage,0.00,-
+,Change in Storage,0.00,-
+,-,-,-
+,Water Supplied by Utility,0.00,-
+,-,-,-
+,Total On Site, Change in Storage, and Utility Water Sources,0.00,-
+,Total Water End Uses,0.00,-
+
+
+Setpoint Not Met Criteria
+
+,,Degrees [deltaC]
+,Tolerance for Zone Heating Setpoint Not Met Time,0.20
+,Tolerance for Zone Cooling Setpoint Not Met Time,0.20
+
+
+Comfort and Setpoint Not Met Summary
+
+,,Facility [Hours]
+,Time Setpoint Not Met During Occupied Heating,1785.83
+,Time Setpoint Not Met During Occupied Cooling,727.33
+,Time Not Comfortable Based on Simple ASHRAE 55-2004,1979.08
+
+
+Note 1: An asterisk (*) indicates that the feature is not yet implemented.
+----------------------------------------------------------------------------------------------------
+REPORT:,Input Verification and Results Summary
+FOR:,Entire Facility
+General
+
+,,Value
+,Program Version and Build,EnergyPlus, Version 22.2.0-c249759bad, YMD=2023.10.23 15:08
+,RunPeriod,ANO
+,Weather File,Sao.Paulo-Congonhas.AP SP BRA SRC-TMYx WMO#=837800
+,Latitude [deg],-23.6
+,Longitude [deg],-46.7
+,Elevation [m],801.90
+,Time Zone,-3.0
+,North Axis Angle [deg],0.00
+,Rotation for Appendix G [deg],0.00
+,Hours Simulated [hrs],8760.00
+
+
+ENVELOPE
+Window-Wall Ratio
+
+,,Total,North (315 to 45 deg),East (45 to 135 deg),South (135 to 225 deg),West (225 to 315 deg)
+,Gross Wall Area [m2],70.10,16.52,18.52,16.53,18.52
+,Above Ground Wall Area [m2],70.10,16.52,18.52,16.53,18.52
+,Window Opening Area [m2],8.28,0.00,1.65,4.10,2.52
+,Gross Window-Wall Ratio [%],11.80,0.00,8.91,24.83,13.61
+,Above Ground Window-Wall Ratio [%],11.80,0.00,8.91,24.83,13.61
+
+
+Conditioned Window-Wall Ratio
+
+,,Total,North (315 to 45 deg),East (45 to 135 deg),South (135 to 225 deg),West (225 to 315 deg)
+,Gross Wall Area [m2],59.17,10.20,18.52,16.53,13.93
+,Above Ground Wall Area [m2],59.17,10.20,18.52,16.53,13.93
+,Window Opening Area [m2],7.64,0.00,1.65,4.10,1.89
+,Gross Window-Wall Ratio [%],12.92,0.00,8.91,24.83,13.59
+,Above Ground Window-Wall Ratio [%],12.92,0.00,8.91,24.83,13.59
+
+
+Skylight-Roof Ratio
+
+,,Total
+,Gross Roof Area [m2],43.24
+,Skylight Area [m2],0.00
+,Skylight-Roof Ratio [%],0.00
+
+
+PERFORMANCE
+Zone Summary
+
+,,Area [m2],Conditioned (Y/N),Part of Total Floor Area (Y/N),Volume [m3],Multipliers,Above Ground Gross Wall Area [m2],Underground Gross Wall Area [m2],Window Glass Area [m2],Opening Area [m2],Lighting [W/m2],People [m2 per person],Plug and Process [W/m2]
+,SALA,21.43,Yes,Yes,53.57,1.00,28.15,0.00,3.64,4.22,5.0000,5.36,5.6000
+,DORM1,8.85,Yes,Yes,22.13,1.00,14.93,0.00,1.51,1.77,5.0000,4.43,0.0000
+,DORM2,8.30,Yes,Yes,20.76,1.00,16.10,0.00,1.40,1.65,5.0000,4.15,0.0000
+,BWC,4.66,No,Yes,11.64,1.00,10.92,0.00,0.48,0.63,0.0000,,0.0000
+,Total,43.24,,,108.09,,70.10,0.00,7.03,8.28,4.4617,5.40,2.7755
+,Conditioned Total,38.58,,,96.45,,59.18,0.00,6.55,7.65,5.0000,4.82,3.1103
+,Unconditioned Total,4.66,,,11.64,,10.92,0.00,0.48,0.63,0.0000,,0.0000
+,Not Part of Total,0.00,,,0.00,,0.00,0.00,0.00,0.00,,,
+
+
+Space Summary
+
+,,Area [m2],Conditioned (Y/N),Part of Total Floor Area (Y/N),Multipliers,Zone Name,Space Type,Radiant/Solar Enclosure Name,Lighting [W/m2],People [m2 per person],Plug and Process [W/m2],Tags
+,SALA,21.43,Yes,Yes,1.00,SALA,GENERAL,SALA,5.0000,5.36,5.6000,
+,DORM1,8.85,Yes,Yes,1.00,DORM1,GENERAL,DORM1,5.0000,4.43,0.0000,
+,DORM2,8.30,Yes,Yes,1.00,DORM2,GENERAL,DORM2,5.0000,4.15,0.0000,
+,BWC,4.66,No,Yes,1.00,BWC,GENERAL,BWC,0.0000,0.00,0.0000,
+,Total,43.24,,,,,,,4.4617,2.70,2.7755,
+,Conditioned Total,38.58,,,,,,,5.0000,2.41,3.1103,
+,Unconditioned Total,4.66,,,,,,,0.0000,0.00,0.0000,
+,Not Part of Total,0.00,,,,,,,0.0000,0.00,0.0000,
+
+
+Space Type Summary
+
+,,Total Area [m2],Conditioned Area [m2],Unconditioned Area [m2],Not Part of Total Area [m2],Lighting [W/m2],People [m2 per person],Plug and Process [W/m2]
+,GENERAL,43.24,38.58,4.66,0.00,4.4617,5.40,2.7755
+,Total,43.24,38.58,4.66,0.00,,,
+
+
+----------------------------------------------------------------------------------------------------
+REPORT:,Demand End Use Components Summary
+FOR:,Entire Facility
+End Uses
+
+,,Electricity [W],Natural Gas [W],Gasoline [W],Diesel [W],Coal [W],Fuel Oil No 1 [W],Fuel Oil No 2 [W],Propane [W],Other Fuel 1 [W],Other Fuel 2 [W],District Cooling [W],District Heating [W],Water [m3/s]
+,Time of Peak,01-JAN-16:04,-,-,-,-,-,-,-,-,-,18-JAN-14:05,17-JUL-22:04,-
+,Heating,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,1582.32,0.00
+,Cooling,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,5287.72,0.00,0.00
+,Interior Lighting,107.14,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00
+,Exterior Lighting,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00
+,Interior Equipment,120.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00
+,Exterior Equipment,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00
+,Fans,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00
+,Pumps,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00
+,Heat Rejection,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00
+,Humidification,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00
+,Heat Recovery,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00
+,Water Systems,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00
+,Refrigeration,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00
+,Generators,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00
+,,,,,,,,,,,,,,
+,Total End Uses,227.14,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,5287.72,1582.32,0.00
+
+
+End Uses By Subcategory
+
+,,Subcategory,Electricity [W],Natural Gas [W],Gasoline [W],Diesel [W],Coal [W],Fuel Oil No 1 [W],Fuel Oil No 2 [W],Propane [W],Other Fuel 1 [W],Other Fuel 2 [W],District Cooling [W],District Heating [W],Water [m3/s]
+,Heating,General,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,1582.32,0.00
+,Cooling,General,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,5287.72,0.00,0.00
+,Interior Lighting,GeneralLights,107.14,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00
+,Exterior Lighting,General,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00
+,Interior Equipment,General,120.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00
+,Exterior Equipment,General,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00
+,Fans,General,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00
+,Pumps,General,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00
+,Heat Rejection,General,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00
+,Humidification,General,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00
+,Heat Recovery,General,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00
+,Water Systems,General,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00
+,Refrigeration,General,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00
+,Generators,General,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00
+
+
+----------------------------------------------------------------------------------------------------
+REPORT:,Source Energy End Use Components Summary
+FOR:,Entire Facility
+Values gathered over      8760.00 hours
+
+Source Energy End Use Components Summary
+
+,,Source Electricity [kWh],Source Natural Gas [kWh],Source Gasoline [kWh],Source Diesel [kWh],Source Coal [kWh],Source Fuel Oil No 1 [kWh],Source Fuel Oil No 2 [kWh],Source Propane [kWh],Source Other Fuel 1 [kWh],Source Other Fuel 2 [kWh],Source District Cooling [kWh],Source District Heating [kWh]
+,Heating,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,349.38
+,Cooling,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,3446.81,0.00
+,Interior Lighting,1139.66,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00
+,Exterior Lighting,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00
+,Interior Equipment,1109.72,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00
+,Exterior Equipment,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00
+,Fans,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00
+,Pumps,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00
+,Heat Rejection,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00
+,Humidification,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00
+,Heat Recovery,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00
+,Water Systems,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00
+,Refrigeration,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00
+,Generators,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00
+,,,,,,,,,,,,,
+,Total Source Energy End Use Components,2249.38,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,3446.81,349.38
+
+
+Normalized Metrics
+Source Energy End Use Components Per Conditioned Floor Area
+
+,,Source Electricity [kWh/m2],Source Natural Gas [kWh/m2],Source Gasoline [kWh/m2],Source Diesel [kWh/m2],Source Coal [kWh/m2],Source Fuel Oil No 1 [kWh/m2],Source Fuel Oil No 2 [kWh/m2],Source Propane [kWh/m2],Source Other Fuel 1 [kWh/m2],Source Other Fuel 2 [kWh/m2],Source District Cooling [kWh/m2],Source District Heating [kWh/m2]
+,Heating,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,9.06
+,Cooling,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,89.34,0.00
+,Interior Lighting,29.54,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00
+,Exterior Lighting,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00
+,Interior Equipment,28.76,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00
+,Exterior Equipment,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00
+,Fans,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00
+,Pumps,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00
+,Heat Rejection,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00
+,Humidification,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00
+,Heat Recovery,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00
+,Water Systems,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00
+,Refrigeration,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00
+,Generators,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00
+,,,,,,,,,,,,,
+,Total Source Energy End Use Components,58.30,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,89.34,9.06
+
+
+Source Energy End Use Components Per Total Floor Area
+
+,,Source Electricity [kWh/m2],Source Natural Gas [kWh/m2],Source Gasoline [kWh/m2],Source Diesel [kWh/m2],Source Coal [kWh/m2],Source Fuel Oil No 1 [kWh/m2],Source Fuel Oil No 2 [kWh/m2],Source Propane [kWh/m2],Source Other Fuel 1 [kWh/m2],Source Other Fuel 2 [kWh/m2],Source District Cooling [kWh/m2],Source District Heating [kWh/m2]
+,Heating,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,8.08
+,Cooling,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,79.72,0.00
+,Interior Lighting,26.36,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00
+,Exterior Lighting,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00
+,Interior Equipment,25.67,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00
+,Exterior Equipment,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00
+,Fans,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00
+,Pumps,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00
+,Heat Rejection,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00
+,Humidification,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00
+,Heat Recovery,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00
+,Water Systems,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00
+,Refrigeration,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00
+,Generators,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00
+,,,,,,,,,,,,,
+,Total Source Energy End Use Components,52.03,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,79.72,8.08
+
+
+----------------------------------------------------------------------------------------------------
+REPORT:,Component Sizing Summary
+FOR:,Entire Facility
+----------------------------------------------------------------------------------------------------
+REPORT:,Surface Shadowing Summary
+FOR:,Entire Facility
+Surfaces (Walls, Roofs, etc) that may be Shadowed by Other Surfaces
+
+,,Possible Shadow Receivers
+,SALA_PAREX_00D,DORM1_PAREX_00I |
+,SALA_PAREX_00S,DORM2_PAREX_00E |
+,DORM1_PAREX_00I,SALA_PAREX_00D |
+,DORM2_PAREX_00E,SALA_PAREX_00S | BWC_PAREX_00S |
+,BWC_PAREX_00S,DORM2_PAREX_00E |
+
+
+Subsurfaces (Windows and Doors) that may be Shadowed by Surfaces
+
+,,Possible Shadow Receivers
+,SALA_PAREX_00I,SALA_JAN_0_00I |
+,SALA_PAREX_01E,SALA_JAN_0_01E |
+,SALA_PAREX_00D,SALA_PORTAEX_0_00D |
+,SALA_PAREX_00S,SALA_PORTAEX_0_00S |
+,DORM1_PAREX_00I,DORM1_JAN_0_00I |
+,DORM2_PAREX_00D,DORM2_JAN_0_00D |
+,BWC_PAREX_00E,BWC_JAN_0_00E |
+
+
+----------------------------------------------------------------------------------------------------
+REPORT:,Adaptive Comfort Summary
+FOR:,Entire Facility
+Time Not Meeting the Adaptive Comfort Models during Occupied Hours
+
+,,ASHRAE55 90% Acceptability Limits [Hours],ASHRAE55 80% Acceptability Limits  [Hours],CEN15251 Category I Acceptability Limits [Hours],CEN15251 Category II Acceptability Limits [Hours],CEN15251 Category III Acceptability Limits [Hours]
+
+
+----------------------------------------------------------------------------------------------------
+REPORT:,Initialization Summary
+FOR:,Entire Facility
+Version
+
+,,Version ID
+,1,22.2
+
+
+Timesteps per Hour
+
+,,#TimeSteps,Minutes per TimeStep {minutes}
+,1,12,5
+
+
+System Convergence Limits
+
+,,Minimum System TimeStep {minutes},Max HVAC Iterations,Minimum Plant Iterations,Maximum Plant Iterations
+,1,1,20,2,8
+
+
+Simulation Control
+
+,,Do Zone Sizing,Do System Sizing,Do Plant Sizing,Do Design Days,Do Weather Simulation,Do HVAC Sizing Simulation
+,1,No,No,No,No,Yes,No
+
+
+Performance Precision Tradeoffs
+
+,,Use Coil Direct Simulation,Zone Radiant Exchange Algorithm,Override Mode,Number of Timestep In Hour,Force Euler Method,Minimum Number of Warmup Days,Force Suppress All Begin Environment Resets,Minimum System Timestep,MaxZoneTempDiff,MaxAllowedDelTemp
+,1,No,ScriptF,Normal,12,No,1,No,1.0,0.300,2.0000E-003
+
+
+Output Reporting Tolerances
+
+,,Tolerance for Time Heating Setpoint Not Met,Tolerance for Zone Cooling Setpoint Not Met Time
+,1,0.200,0.200
+
+
+Site:GroundTemperature:BuildingSurface
+
+,,Jan{C},Feb{C},Mar{C},Apr{C},May{C},Jun{C},Jul{C},Aug{C},Sep{C},Oct{C},Nov{C},Dec{C}
+,1,18.00,18.00,18.00,18.00,18.00,18.00,18.00,18.00,18.00,18.00,18.00,18.00
+
+
+Site:GroundTemperature:FCfactorMethod
+
+,,Jan{C},Feb{C},Mar{C},Apr{C},May{C},Jun{C},Jul{C},Aug{C},Sep{C},Oct{C},Nov{C},Dec{C}
+,1,22.73,22.92,22.49,21.84,20.17,18.91,18.08,17.85,18.33,19.34,20.67,21.88
+
+
+Site:GroundTemperature:Shallow
+
+,,Jan{C},Feb{C},Mar{C},Apr{C},May{C},Jun{C},Jul{C},Aug{C},Sep{C},Oct{C},Nov{C},Dec{C}
+,1,13.00,13.00,13.00,13.00,13.00,13.00,13.00,13.00,13.00,13.00,13.00,13.00
+
+
+Site:GroundTemperature:Deep
+
+,,Jan{C},Feb{C},Mar{C},Apr{C},May{C},Jun{C},Jul{C},Aug{C},Sep{C},Oct{C},Nov{C},Dec{C}
+,1,16.00,16.00,16.00,16.00,16.00,16.00,16.00,16.00,16.00,16.00,16.00,16.00
+
+
+Site:GroundReflectance
+
+,,Jan{dimensionless},Feb{dimensionless},Mar{dimensionless},Apr{dimensionless},May{dimensionless},Jun{dimensionless},Jul{dimensionless},Aug{dimensionless},Sep{dimensionless},Oct{dimensionless},Nov{dimensionless},Dec{dimensionless}
+,1,0.20,0.20,0.20,0.20,0.20,0.20,0.20,0.20,0.20,0.20,0.20,0.20
+
+
+Site:GroundReflectance:SnowModifier
+
+,,Normal,Daylighting {dimensionless}
+,1,1.000,1.000
+
+
+Site:GroundReflectance:Snow
+
+,,Jan{dimensionless},Feb{dimensionless},Mar{dimensionless},Apr{dimensionless},May{dimensionless},Jun{dimensionless},Jul{dimensionless},Aug{dimensionless},Sep{dimensionless},Oct{dimensionless},Nov{dimensionless},Dec{dimensionless}
+,1,0.20,0.20,0.20,0.20,0.20,0.20,0.20,0.20,0.20,0.20,0.20,0.20
+
+
+Site:GroundReflectance:Snow:Daylighting
+
+,,Jan{dimensionless},Feb{dimensionless},Mar{dimensionless},Apr{dimensionless},May{dimensionless},Jun{dimensionless},Jul{dimensionless},Aug{dimensionless},Sep{dimensionless},Oct{dimensionless},Nov{dimensionless},Dec{dimensionless}
+,1,0.20,0.20,0.20,0.20,0.20,0.20,0.20,0.20,0.20,0.20,0.20,0.20
+
+
+Environment:Weather Station
+
+,,Wind Sensor Height Above Ground {m},Wind Speed Profile Exponent {},Wind Speed Profile Boundary Layer Thickness {m},Air Temperature Sensor Height Above Ground {m},Wind Speed Modifier Coefficient-Internal,Temperature Modifier Coefficient-Internal
+,1,10.000,0.140,270.000,1.500,1.586,9.750E-003
+
+
+Site:Location
+
+,,Location Name,Latitude {N+/S- Deg},Longitude {E+/W- Deg},Time Zone Number {GMT+/-},Elevation {m},Standard Pressure at Elevation {Pa},Standard RhoAir at Elevation
+,1,Sao.Paulo-Congonhas.AP SP BRA SRC-TMYx WMO#=837800,-23.63,-46.66,-3.00,801.90,92055,1.0941
+
+
+Site Water Mains Temperature Information
+
+,,Calculation Method{},Water Mains Temperature Schedule Name{},Annual Average Outdoor Air Temperature{C},Maximum Difference In Monthly Average Outdoor Air Temperatures{deltaC},Fixed Default Water Mains Temperature{C}
+,1,FixedDefault,NA,NA,NA,10.0
+
+
+Building Information
+
+,,Building Name,North Axis {deg},Terrain,Loads Convergence Tolerance Value,Temperature Convergence Tolerance Value,Solar Distribution,Maximum Number of Warmup Days,Minimum Number of Warmup Days
+,1,unifamiliar,0.000,City,4.00000E-002,0.40000,FullInteriorAndExteriorWithReflectionsFromExteriorSurfaces,25,6
+
+
+Inside Convection Algorithm
+
+,,Algorithm {Simple
+,,TARP
+,,CeilingDiffuser
+,,AdaptiveConvectionAlgorithm}
+,1,TARP
+
+
+Outside Convection Algorithm
+
+,,Algorithm {SimpleCombined
+,,TARP
+,,MoWitt
+,,DOE-2
+,,AdaptiveConvectionAlgorithm}
+,1,DOE-2
+
+
+Sky Radiance Distribution
+
+,,Value {Anisotropic}
+,1,Anisotropic
+
+
+Zone Air Solution Algorithm
+
+,,Value {ThirdOrderBackwardDifference
+,,AnalyticalSolution
+,,EulerMethod}
+,1,ThirdOrderBackwardDifference
+
+
+Zone Air Carbon Dioxide Balance Simulation
+
+,,Simulation {Yes/No},Carbon Dioxide Concentration
+,1,No,N/A
+
+
+Zone Air Generic Contaminant Balance Simulation
+
+,,Simulation {Yes/No},Generic Contaminant Concentration
+,1,No,N/A
+
+
+Zone Air Mass Flow Balance Simulation
+
+,,Enforce Mass Balance,Adjust Zone Mixing and Return {AdjustMixingOnly,Adjust Zone Infiltration {AddInfiltration,Infiltration Zones {MixingSourceZonesOnly
+,,,AdjustReturnOnly,AdjustInfiltration,AllZones}
+,,,AdjustMixingThenReturn,None},
+,,,AdjustReturnThenMixing,,
+,,,None},,
+,1,No,N/A,N/A,N/A
+
+
+HVACSystemRootFindingAlgorithm
+
+,,Value {RegulaFalsi
+,,Bisection
+,,BisectionThenRegulaFalsi
+,,RegulaFalsiThenBisection}
+,1,RegulaFalsi
+
+
+Environment:Site Atmospheric Variation
+
+,,Wind Speed Profile Exponent {},Wind Speed Profile Boundary Layer Thickness {m},Air Temperature Gradient Coefficient {K/m}
+,1,0.330,460.000,6.500000E-003
+
+
+Surface Geometry
+
+,,Starting Corner,Vertex Input Direction,Coordinate System,Daylight Reference Point Coordinate System,Rectangular (Simple) Surface Coordinate System
+,1,LowerLeftCorner,Counterclockwise,RelativeCoordinateSystem,RelativeCoordinateSystem,RelativeToZoneOrigin
+
+
+Other Side Conditions Model
+
+,,Name,Class
+,1,GROUND_COUPLED_OSCM,GROUNDCOUPLEDSURFACE
+
+
+Surface Heat Transfer Algorithm
+
+,,Value {CTF - ConductionTransferFunction,Inside Surface Max Temperature Limit{C},Surface Convection Coefficient Lower Limit {W/m2-K},Surface Convection Coefficient Upper Limit {W/m2-K}
+,,EMPD - MoisturePenetrationDepthConductionTransferFunction,,,
+,,CondFD - ConductionFiniteDifference,,,
+,,HAMT - CombinedHeatAndMoistureFiniteElement} - Description,,,
+,1,CTF - ConductionTransferFunction,200,0.10,1000.0
+
+
+Shading Summary
+
+,,Number of Fixed Detached Shades,Number of Building Detached Shades,Number of Attached Shades
+,1,0,0,0
+
+
+Zone Summary
+
+,,Number of Zones,Number of Zone Surfaces,Number of SubSurfaces
+,1,4,43,13
+
+
+Zone Information
+
+,,Zone Name,North Axis {deg},Origin X-Coordinate {m},Origin Y-Coordinate {m},Origin Z-Coordinate {m},Centroid X-Coordinate {m},Centroid Y-Coordinate {m},Centroid Z-Coordinate {m},Type,Zone Multiplier,Zone List Multiplier,Minimum X {m},Maximum X {m},Minimum Y {m},Maximum Y {m},Minimum Z {m},Maximum Z {m},Ceiling Height {m},Volume {m3},Zone Inside Convection Algorithm {Simple-Detailed-CeilingDiffuser-TrombeWall},Zone Outside Convection Algorithm {Simple-Detailed-Tarp-MoWitt-DOE-2-BLAST},Floor Area {m2},Exterior Gross Wall Area {m2},Exterior Net Wall Area {m2},Exterior Window Area {m2},Number of Surfaces,Number of SubSurfaces,Number of Shading SubSurfaces,Part of Total Building Area
+,1,SALA,0.0,0.00,0.00,0.00,2.13,3.24,1.25,1,1,1,0.00,3.87,0.00,6.74,0.00,2.50,2.50,53.57,TARP,DOE-2,21.43,28.15,20.57,3.64,11,7,0,Yes
+,2,DORM1,0.0,3.87,1.15,0.00,5.24,2.77,1.25,1,1,1,3.87,6.61,1.15,4.38,0.00,2.50,2.50,22.13,TARP,DOE-2,8.85,14.93,13.15,1.51,6,2,0,Yes
+,3,DORM2,0.0,3.87,4.38,0.00,5.24,5.90,1.25,1,1,1,3.87,6.61,4.38,7.41,0.00,2.50,2.50,20.76,TARP,DOE-2,8.30,16.10,14.45,1.40,7,2,0,Yes
+,4,BWC,0.0,0.00,4.90,0.00,1.27,5.82,1.25,1,1,1,0.00,2.53,4.90,6.74,0.00,2.50,2.50,11.64,TARP,DOE-2,4.66,10.93,10.30,0.48,6,2,0,Yes
+
+
+Zone Internal Gains Nominal
+
+,,Zone Name,Floor Area {m2},# Occupants,Area per Occupant {m2/person},Occupant per Area {person/m2},Interior Lighting {W/m2},Electric Load {W/m2},Gas Load {W/m2},Other Load {W/m2},Hot Water Eq {W/m2},Steam Equipment {W/m2},Sum Loads per Area {W/m2},Outdoor Controlled Baseboard Heat
+,1,SALA,21.43,4.0,5.357,0.187,5.000,5.600,0.000,0.000,0.000,0.000,10.600,No
+,2,DORM1,8.85,2.0,4.425,0.226,5.000,0.000,0.000,0.000,0.000,0.000,5.000,No
+,3,DORM2,8.30,2.0,4.151,0.241,5.000,0.000,0.000,0.000,0.000,0.000,5.000,No
+,4,BWC,4.66,0.0,N/A,0.000,0.000,0.000,0.000,0.000,0.000,0.000,0.000,No
+
+
+People Internal Gains Nominal
+
+,,Name,Schedule Name,Zone Name,Zone Floor Area {m2},# Zone Occupants,Number of People {},People/Floor Area {person/m2},Floor Area per person {m2/person},Fraction Radiant,Fraction Convected,Sensible Fraction Calculation,Activity level,ASHRAE 55 Warnings,Carbon Dioxide Generation Rate,Nominal Minimum Number of People,Nominal Maximum Number of People
+,1,SALA_PEOPLE,SCH_OCUP_SALA,SALA,21.43,4.0,4.0,0.187,5.357,0.300,0.700,AutoCalculate,SCH_ATIV_SALA,No,3.8200E-008,0,4
+,2,DORM1_PEOPLE,SCH_OCUP_DORM,DORM1,8.85,2.0,2.0,0.226,4.425,0.300,0.700,AutoCalculate,SCH_ATIV_DORM,No,3.8200E-008,0,2
+,3,DORM2_PEOPLE,SCH_OCUP_DORM,DORM2,8.30,2.0,2.0,0.241,4.151,0.300,0.700,AutoCalculate,SCH_ATIV_DORM,No,3.8200E-008,0,2
+
+
+Lights Internal Gains Nominal
+
+,,Name,Schedule Name,Zone Name,Zone Floor Area {m2},# Zone Occupants,Lighting Level {W},Lights/Floor Area {W/m2},Lights per person {W/person},Fraction Return Air,Fraction Radiant,Fraction Short Wave,Fraction Convected,Fraction Replaceable,End-Use Category,Nominal Minimum Lighting Level {W},Nominal Maximum Lighting Level {W}
+,1,SALA LIGHTS_SALA,SCH_ILUM_SALA,SALA,21.43,4.0,107.143,5.000,26.786,0.000,0.320,0.230,0.450,0.000,GeneralLights,0.000,107.143
+,2,DORM1 LIGHTS_DORM,SCH_ILUM_DORM,DORM1,8.85,2.0,44.251,5.000,22.126,0.000,0.320,0.230,0.450,0.000,GeneralLights,0.000,44.251
+,3,DORM2 LIGHTS_DORM,SCH_ILUM_DORM,DORM2,8.30,2.0,41.511,5.000,20.756,0.000,0.320,0.230,0.450,0.000,GeneralLights,0.000,41.511
+
+
+ElectricEquipment Internal Gains Nominal
+
+,,Name,Schedule Name,Zone Name,Zone Floor Area {m2},# Zone Occupants,Equipment Level {W},Equipment/Floor Area {W/m2},Equipment per person {W/person},Fraction Latent,Fraction Radiant,Fraction Lost,Fraction Convected,End-Use SubCategory,Nominal Minimum Equipment Level {W},Nominal Maximum Equipment Level {W}
+,1,SALA EQUIP_SALA,SCH_EQUIP_SALA,SALA,21.43,4.0,120.000,5.600,30.000,0.000,0.300,0.000,0.700,General,0.000,120.000
+
+
+Solar View Factor Check Values
+
+,,Zone/Enclosure Name,Original Check Value,Calculated Fixed Check Value,Final Check Value,Number of Iterations,Fixed RowSum Convergence,Used RowSum Convergence
+,1,SALA,4.263256E-014,8.745990E-004,8.745990E-004,12,8.745990E-004,8.745990E-004
+,2,DORM1,1.776357E-015,7.704086E-004,7.704086E-004,7,7.704086E-004,7.704086E-004
+,3,DORM2,8.881784E-015,9.361078E-004,9.361078E-004,5,9.361078E-004,9.361078E-004
+,4,BWC,1.776357E-015,6.554229E-004,6.554229E-004,9,6.554229E-004,6.554229E-004
+
+
+Shadowing/Sun Position Calculations Annual Simulations
+
+,,Shading Calculation Method,Shading Calculation Update Frequency Method,Shading Calculation Update Frequency {days},Maximum Figures in Shadow Overlap Calculations {},Polygon Clipping Algorithm,Pixel Counting Resolution,Sky Diffuse Modeling Algorithm,Output External Shading Calculation Results,Disable Self-Shading Within Shading Zone Groups,Disable Self-Shading From Shading Zone Groups to Other Zones
+,1,PolygonClipping,Periodic,20,15000,SutherlandHodgman,512,SimpleSkyDiffuseModeling,No,No,No
+
+
+Surface View Factor Check Values
+
+,,Zone/Enclosure Name,Original Check Value,Calculated Fixed Check Value,Final Check Value,Number of Iterations,Fixed RowSum Convergence,Used RowSum Convergence
+,1,SALA,4.263256E-014,8.745990E-004,8.745990E-004,12,8.745990E-004,8.745990E-004
+,2,DORM1,1.776357E-015,7.704086E-004,7.704086E-004,7,7.704086E-004,7.704086E-004
+,3,DORM2,8.881784E-015,9.361078E-004,9.361078E-004,5,9.361078E-004,9.361078E-004
+,4,BWC,1.776357E-015,6.554229E-004,6.554229E-004,9,6.554229E-004,6.554229E-004
+
+
+RoomAir Model
+
+,,Zone Name,Mixing/Mundt/UCSDDV/UCSDCV/UCSDUFI/UCSDUFE/User Defined
+,1,SALA,Mixing/Well-Stirred
+,2,DORM1,Mixing/Well-Stirred
+,3,DORM2,Mixing/Well-Stirred
+,4,BWC,Mixing/Well-Stirred
+
+
+AirflowNetwork Model:Control
+
+,,No Multizone or Distribution/Multizone with Distribution/Multizone without Distribution/Multizone with Distribution only during Fan Operation
+,1,MultizoneWithoutDistribution
+
+
+AirflowNetwork Model:Wind Direction
+
+,,Wind Direction #1 to n (degree)
+,1,0.0
+
+
+AirflowNetwork Model:Wind Pressure Coefficients
+
+,,Name,Wind Pressure Coefficients #1 to n (dimensionless)
+,1,!WPCTABLE1,0.60
+,2,!WPCTABLE2,-0.42
+,3,!WPCTABLE3,-0.46
+,4,!WPCTABLE4,-0.42
+
+
+Zone Volume Capacitance Multiplier
+
+,,Sensible Heat Capacity Multiplier,Moisture Capacity Multiplier,Carbon Dioxide Capacity Multiplier,Generic Contaminant Capacity Multiplier
+,1,1.000,1.000,1.000,1.000
+
+
+Environment
+
+,,Environment Name,Environment Type,Start Date,End Date,Start DayOfWeek,Duration {#days},Source:Start DayOfWeek,Use Daylight Saving,Use Holidays,Apply Weekend Holiday Rule,Use Rain Values,Use Snow Values,Sky Temperature Model
+,1,ANO,WeatherFileRunPeriod,01/01/2007,12/31/2007,Monday,365,Use RunPeriod Specified Day,No,No,No,No,No,Clark and Allen
+
+
+Environment:Daylight Saving
+
+,,Daylight Saving Indicator,Source,Start Date,End Date
+,1,No,RunPeriod Object,,
+
+
+Environment:WarmupDays
+
+,,NumberofWarmupDays
+,1,6
+
+
+Warmup Convergence Information
+
+,,Zone Name,Environment Type/Name,Average Warmup Temperature Difference {deltaC},Std Dev Warmup Temperature Difference {deltaC},Max Temperature Pass/Fail Convergence,Min Temperature Pass/Fail Convergence,Average Warmup Load Difference {W},Std Dev Warmup Load Difference {W},Heating Load Pass/Fail Convergence,Cooling Load Pass/Fail Convergence
+,1,SALA,RunPeriod: ANO,5.6310022201E-002,0.3329344183,Pass,Pass,6.8797953243E-002,0.9834100683,Pass,Pass
+,2,DORM1,RunPeriod: ANO,4.4060644731E-002,0.3021352402,Pass,Pass,1.0336865934E-002,8.6575400950E-002,Pass,Pass
+,3,DORM2,RunPeriod: ANO,4.3896703653E-002,0.2922951655,Pass,Pass,7.8535665496E-003,6.0881717205E-002,Pass,Pass
+,4,BWC,RunPeriod: ANO,4.1316858123E-002,2.8026849666E-002,Pass,Pass,0.0000000000,0.0000000000,Pass,Pass
+
+
+----------------------------------------------------------------------------------------------------
+REPORT:,Annual Heat Emissions Report
+FOR:,Entire Facility
+Annual Heat Emissions Summary
+
+,,Envelope Convection,Zone Exfiltration,Zone Exhaust Air,HVAC Relief Air,HVAC Reject Heat,Total
+,Heat Emissions [kWh],24746.46,6870.30,0.00,0.00,0.00,31616.75
+
+
+----------------------------------------------------------------------------------------------------
+REPORT:,Annual Thermal Resilience Summary
+FOR:,Entire Facility
+Heat Index Hours
+
+,,Safe (≤ 26.7°C) [hr],Caution (> 26.7°C, ≤ 32.2°C) [hr],Extreme Caution (> 32.2°C, ≤ 39.4°C) [hr],Danger (> 39.4°C, ≤ 51.7°C) [hr],Extreme Danger (> 51.7°C) [hr]
+,SALA,8162.92,597.08,0.00,0.00,0.00
+,DORM1,7025.17,1734.17,0.67,0.00,0.00
+,DORM2,6701.25,2052.92,5.83,0.00,0.00
+,BWC,7163.50,1578.00,18.50,0.00,0.00
+,Min,6701.25,597.08,0.00,0.00,0.00
+,Max,8162.92,2052.92,18.50,0.00,0.00
+,Average,7263.21,1490.54,6.25,0.00,0.00
+,Sum,29052.83,5962.17,25.00,0.00,0.00
+
+
+Heat Index OccupantHours
+
+,,Safe (≤ 26.7°C) [hr],Caution (> 26.7°C, ≤ 32.2°C) [hr],Extreme Caution (> 32.2°C, ≤ 39.4°C) [hr],Danger (> 39.4°C, ≤ 51.7°C) [hr],Extreme Danger (> 51.7°C) [hr]
+,SALA,8759.67,0.33,0.00,0.00,0.00
+,DORM1,7300.00,0.00,0.00,0.00,0.00
+,DORM2,7300.00,0.00,0.00,0.00,0.00
+,BWC,0.00,0.00,0.00,0.00,0.00
+,Min,0.00,0.00,0.00,0.00,0.00
+,Max,8759.67,0.33,0.00,0.00,0.00
+,Average,5839.92,0.08,0.00,0.00,0.00
+,Sum,23359.67,0.33,0.00,0.00,0.00
+
+
+Heat Index OccupiedHours
+
+,,Safe (≤ 26.7°C) [hr],Caution (> 26.7°C, ≤ 32.2°C) [hr],Extreme Caution (> 32.2°C, ≤ 39.4°C) [hr],Danger (> 39.4°C, ≤ 51.7°C) [hr],Extreme Danger (> 51.7°C) [hr]
+,SALA,2919.83,0.17,0.00,0.00,0.00
+,DORM1,3650.00,0.00,0.00,0.00,0.00
+,DORM2,3650.00,0.00,0.00,0.00,0.00
+,BWC,0.00,0.00,0.00,0.00,0.00
+,Min,0.00,0.00,0.00,0.00,0.00
+,Max,3650.00,0.17,0.00,0.00,0.00
+,Average,2554.96,0.04,0.00,0.00,0.00
+,Sum,10219.83,0.17,0.00,0.00,0.00
+
+
+Humidex Hours
+
+,,Little to no Discomfort (≤ 29) [hr],Some Discomfort (> 29, ≤ 40) [hr],Great Discomfort; Avoid Exertion (> 40, ≤ 45) [hr],Dangerous (> 45, ≤ 50) [hr],Heat Stroke Quite Possible (> 50) [hr]
+,SALA,6704.00,2056.00,0.00,0.00,0.00
+,DORM1,6135.00,2625.00,0.00,0.00,0.00
+,DORM2,5931.75,2828.25,0.00,0.00,0.00
+,BWC,5282.25,3477.75,0.00,0.00,0.00
+,Min,5282.25,2056.00,0.00,0.00,0.00
+,Max,6704.00,3477.75,0.00,0.00,0.00
+,Average,6013.25,2746.75,0.00,0.00,0.00
+,Sum,24053.00,10987.00,0.00,0.00,0.00
+
+
+Humidex OccupantHours
+
+,,Little to no Discomfort (≤ 29) [hr],Some Discomfort (> 29, ≤ 40) [hr],Great Discomfort; Avoid Exertion (> 40, ≤ 45) [hr],Dangerous (> 45, ≤ 50) [hr],Heat Stroke Quite Possible (> 50) [hr]
+,SALA,8509.67,250.33,0.00,0.00,0.00
+,DORM1,7042.00,258.00,0.00,0.00,0.00
+,DORM2,7099.00,201.00,0.00,0.00,0.00
+,BWC,0.00,0.00,0.00,0.00,0.00
+,Min,0.00,0.00,0.00,0.00,0.00
+,Max,8509.67,258.00,0.00,0.00,0.00
+,Average,5662.67,177.33,0.00,0.00,0.00
+,Sum,22650.67,709.33,0.00,0.00,0.00
+
+
+Humidex OccupiedHours
+
+,,Little to no Discomfort (≤ 29) [hr],Some Discomfort (> 29, ≤ 40) [hr],Great Discomfort; Avoid Exertion (> 40, ≤ 45) [hr],Dangerous (> 45, ≤ 50) [hr],Heat Stroke Quite Possible (> 50) [hr]
+,SALA,2825.25,94.75,0.00,0.00,0.00
+,DORM1,3521.00,129.00,0.00,0.00,0.00
+,DORM2,3549.50,100.50,0.00,0.00,0.00
+,BWC,0.00,0.00,0.00,0.00,0.00
+,Min,0.00,0.00,0.00,0.00,0.00
+,Max,3549.50,129.00,0.00,0.00,0.00
+,Average,2473.94,81.06,0.00,0.00,0.00
+,Sum,9895.75,324.25,0.00,0.00,0.00
+
+
+Hours of Safety for Cold Events
+
+,,Hours of Safety [hr],End Time of the Safety Duration,Safe Temperature Exceedance Hours [hr],Safe Temperature Exceedance OccupantHours [hr],Safe Temperature Exceedance OccupiedHours [hr]
+,SALA,4687.00,15-JUL-07:00,6.58,0.00,0.00
+,DORM1,8760.00,-,0.00,0.00,0.00
+,DORM2,8760.00,-,0.00,0.00,0.00
+,BWC,0.00,-,0.00,0.00,0.00
+,Min,0.00,-,0.00,0.00,0.00
+,Max,8760.00,-,6.58,0.00,0.00
+,Average,5551.75,-,1.65,0.00,0.00
+,Sum,22207.00,-,6.58,0.00,0.00
+
+
+Hours of Safety for Heat Events
+
+,,Hours of Safety [hr],End Time of the Safety Duration,Safe Temperature Exceedance Hours [hr],Safe Temperature Exceedance OccupantHours [hr],Safe Temperature Exceedance OccupiedHours [hr]
+,SALA,421.58,18-JAN-13:34,23.58,0.00,0.00
+,DORM1,110.50,05-JAN-14:30,264.92,0.00,0.00
+,DORM2,111.08,05-JAN-15:05,458.50,0.00,0.00
+,BWC,0.00,-,0.00,0.00,0.00
+,Min,0.00,-,0.00,0.00,0.00
+,Max,421.58,-,458.50,0.00,0.00
+,Average,160.79,-,186.75,0.00,0.00
+,Sum,643.17,-,747.00,0.00,0.00
+
+
+Unmet Degree-Hours
+
+,,Cooling Setpoint Unmet Degree-Hours [°C·hr],Cooling Setpoint Unmet Occupant-Weighted Degree-Hours [°C·hr],Cooling Setpoint Unmet Occupied Degree-Hours [°C·hr],Heating Setpoint Unmet Degree-Hours [°C·hr],Heating Setpoint Unmet Occupant-Weighted Degree-Hours [°C·hr],Heating Setpoint Unmet Occupied Degree-Hours [°C·hr]
+,SALA,7580.34,1504.88,609.03,3823.15,2575.76,800.82
+,DORM1,13224.61,496.06,248.03,2949.23,3194.77,1597.39
+,DORM2,15418.81,339.81,169.90,2758.24,3298.45,1649.22
+,BWC,0.00,0.00,0.00,0.00,0.00,0.00
+,Min,0.00,0.00,0.00,0.00,0.00,0.00
+,Max,15418.81,1504.88,609.03,3823.15,3298.45,1649.22
+,Average,9055.94,585.19,256.74,2382.66,2267.25,1011.86
+,Sum,36223.76,2340.75,1026.97,9530.62,9068.98,4047.43
+
+
+Discomfort-weighted Exceedance OccupantHours
+
+,,Very-cold Exceedance OccupantHours [hr],Cool Exceedance OccupantHours [hr],Warm Exceedance OccupantHours [hr],Very-hot Exceedance OccupantHours [hr]
+,SALA,0.00,0.00,0.00,0.00
+,DORM1,0.00,0.00,0.00,0.00
+,DORM2,0.00,0.00,0.00,0.00
+,BWC,0.00,0.00,0.00,0.00
+,Min,0.00,0.00,0.00,0.00
+,Max,0.00,0.00,0.00,0.00
+,Average,0.00,0.00,0.00,0.00
+,Sum,0.00,0.00,0.00,0.00
+
+
+Discomfort-weighted Exceedance OccupiedHours
+
+,,Very-cold Exceedance OccupantHours [hr],Cool Exceedance OccupantHours [hr],Warm Exceedance OccupantHours [hr],Very-hot Exceedance OccupantHours [hr]
+,SALA,0.00,0.00,0.00,0.00
+,DORM1,0.00,0.00,0.00,0.00
+,DORM2,0.00,0.00,0.00,0.00
+,BWC,0.00,0.00,0.00,0.00
+,Min,0.00,0.00,0.00,0.00
+,Max,0.00,0.00,0.00,0.00
+,Average,0.00,0.00,0.00,0.00
+,Sum,0.00,0.00,0.00,0.00
+
+
+----------------------------------------------------------------------------------------------------
+REPORT:,Climatic Data Summary
+FOR:,Entire Facility
+SizingPeriod:DesignDay
+
+,,Maximum Dry Bulb [C],Daily Temperature Range [deltaC],Humidity Value,Humidity Type,Wind Speed [m/s],Wind Direction
+,None,,,,,,
+
+
+Monthly Precipitation Summary
+
+,,Monthly Total Precipitation from .epw [mm],Monthly Total Hours of Rain from .epw,Monthly Total Precipitation in Site:Precipitation [mm],Monthly Total Roof Irrigation Depth [mm],Monthly Total Rain Collection Volume [m3]
+,Jan,544.22,812,,,
+,Feb,356.18,646,,,
+,Mar,463.00,728,,,
+,Apr,193.60,624,,,
+,May,122.20,362,,,
+,Jun,109.60,322,,,
+,Jul,185.80,240,,,
+,Aug,114.76,318,,,
+,Sep,174.64,354,,,
+,Oct,266.82,676,,,
+,Nov,415.98,674,,,
+,Dec,510.60,848,,,
+
+
+Weather Statistics File
+
+,,Value
+,None,
+
+
+----------------------------------------------------------------------------------------------------
+REPORT:,Envelope Summary
+FOR:,Entire Facility
+Opaque Exterior
+
+,,Construction,Reflectance,U-Factor with Film [W/m2-K],U-Factor no Film [W/m2-K],Gross Area [m2],Net Area [m2],Azimuth [deg],Tilt [deg],Cardinal Direction
+,SALA_PAREX_00I,PAR_EXT,0.42,4.835,17.500,9.68,7.34,180.00,90.00,S
+,SALA_PAREX_01E,PAR_EXT,0.42,4.835,17.500,12.25,10.36,270.00,90.00,W
+,SALA_PAREX_00D,PAR_EXT,0.42,4.835,17.500,2.88,1.20,90.00,90.00,E
+,SALA_PAREX_00S,PAR_EXT,0.42,4.835,17.500,3.35,1.67,0.00,90.00,N
+,SALA_COB_1,COB,0.35,2.417,3.618,18.96,18.96,180.00,0.00,
+,SALA_COB_0,COB,0.35,2.417,3.618,2.47,2.47,180.00,0.00,
+,DORM1_PAREX_00D,PAR_EXT,0.42,4.835,17.500,8.07,8.07,90.00,90.00,E
+,DORM1_PAREX_00I,PAR_EXT,0.42,4.835,17.500,6.85,5.08,180.00,90.00,S
+,DORM1_COB,COB,0.35,2.417,3.618,8.85,8.85,180.00,0.00,
+,DORM2_PAREX_00D,PAR_EXT,0.42,4.835,17.500,7.58,5.93,90.00,90.00,E
+,DORM2_PAREX_00S,PAR_EXT,0.42,4.835,17.500,6.85,6.85,0.00,90.00,N
+,DORM2_PAREX_00E,PAR_EXT,0.42,4.835,17.500,1.67,1.67,270.00,90.00,W
+,DORM2_COB,COB,0.35,2.417,3.618,8.30,8.30,180.00,0.00,
+,BWC_PAREX_00E,PAR_EXT,0.42,4.835,17.500,4.60,3.97,270.00,90.00,W
+,BWC_PAREX_00S,PAR_EXT,0.42,4.835,17.500,6.32,6.32,0.00,90.00,N
+,BWC_COB,COB,0.35,2.417,3.618,4.66,4.66,180.00,0.00,
+
+
+Opaque Interior
+
+,,Construction,Reflectance,U-Factor with Film [W/m2-K],U-Factor no Film [W/m2-K],Gross Area [m2],Net Area [m2],Azimuth [deg],Tilt [deg],Cardinal Direction
+,SALA_PARIN_00E,PAR_INT,0.50,3.371,17.500,4.60,2.92,270.00,90.00,W
+,SALA_PARIN_01S,PAR_INT,0.50,3.371,17.500,6.32,6.32,0.00,90.00,N
+,SALA_PARIN_02D,PAR_INT,0.50,3.371,17.500,5.90,4.22,90.00,90.00,E
+,SALA_PARIN_01D,PAR_INT,0.50,3.371,17.500,8.07,6.39,90.00,90.00,E
+,SALA_PISO,PISO,0.50,4.563,17.500,21.43,21.43,180.00,180.00,
+,DORM1_PARIN_00E,PAR_INT,0.50,3.371,17.500,8.07,6.39,270.00,90.00,W
+,DORM1_PARIN_00S,PAR_INT,0.50,3.371,17.500,6.85,6.85,0.00,90.00,N
+,DORM1_PISO,PISO,0.50,4.563,17.500,8.85,8.85,180.00,180.00,
+,DORM2_PARIN_00I,PAR_INT,0.50,3.371,17.500,6.85,6.85,180.00,90.00,S
+,DORM2_PARIN_01E,PAR_INT,0.50,3.371,17.500,5.90,4.22,270.00,90.00,W
+,DORM2_PISO,PISO,0.50,4.563,17.500,8.30,8.30,180.00,180.00,
+,BWC_PARIN_00D,PAR_INT,0.50,3.371,17.500,4.60,2.92,90.00,90.00,E
+,BWC_PARIN_00I,PAR_INT,0.50,3.371,17.500,6.32,6.32,180.00,90.00,S
+,BWC_PISO,PISO,0.50,4.563,17.500,4.66,4.66,180.00,180.00,
+
+
+Exterior Fenestration
+
+,,Construction,Frame and Divider,Glass Area [m2],Frame Area [m2],Divider Area [m2],Area of One Opening [m2],Area of Multiplied Openings [m2],Glass U-Factor [W/m2-K],Glass SHGC,Glass Visible Transmittance,Frame Conductance [W/m2-K],Divider Conductance [W/m2-K],NFRC Product Type,Assembly U-Factor [W/m2-K],Assembly SHGC,Assembly Visible Transmittance,Shade Control,Parent Surface,Azimuth [deg],Tilt [deg],Cardinal Direction
+,SALA_JAN_0_00I,VIDRO,FRAMEDIVIDER,2.02,0.31,0.00,2.33,2.33,5.894,0.861,0.898,56.000,0.000,CurtainWall,5.577,0.796,0.811,No,SALA_PAREX_00I,180.00,90.00,S
+,SALA_JAN_0_01E,VIDRO,FRAMEDIVIDER,1.62,0.27,0.00,1.89,1.89,5.894,0.861,0.898,56.000,0.000,CurtainWall,5.577,0.796,0.811,No,SALA_PAREX_01E,270.00,90.00,W
+,DORM1_JAN_0_00I,VIDRO,FRAMEDIVIDER,1.51,0.26,0.00,1.77,1.77,5.894,0.861,0.898,56.000,0.000,CurtainWall,5.577,0.796,0.811,No,DORM1_PAREX_00I,180.00,90.00,S
+,DORM2_JAN_0_00D,VIDRO,FRAMEDIVIDER,1.40,0.25,0.00,1.65,1.65,5.894,0.861,0.898,56.000,0.000,CurtainWall,5.577,0.796,0.811,No,DORM2_PAREX_00D,90.00,90.00,E
+,BWC_JAN_0_00E,VIDRO,FRAMEDIVIDER,0.48,0.15,0.00,0.63,0.63,5.894,0.861,0.898,56.000,0.000,CurtainWall,5.577,0.796,0.811,No,BWC_PAREX_00E,270.00,90.00,W
+,Total or Average,,,,,,,8.28,5.894,0.861,0.898,,,,,,,,,,,
+,North Total or Average,,,,,,,0.00,-,-,-,,,,,,,,,,,
+,Non-North Total or Average,,,,,,,8.28,5.894,0.861,0.898,,,,,,,,,,,
+
+
+Exterior Fenestration Shaded State
+
+,,Frame and Divider,Glass U-Factor [W/m2-K],Glass SHGC,Glass Visible Transmittance,NFRC Product Type,Assembly U-Factor [W/m2-K],Assembly SHGC,Assembly Visible Transmittance
+,None,,,,,,,,
+
+
+Interior Fenestration
+
+,,Construction,Area of One Opening [m2],Area of Openings [m2],Glass U-Factor [W/m2-K],Glass SHGC,Glass Visible Transmittance,Parent Surface
+,Total or Average,,,0.00,-,-,-,
+
+
+Exterior Door
+
+,,Construction,U-Factor with Film [W/m2-K],U-Factor no Film [W/m2-K],Gross Area [m2],Parent Surface
+,SALA_PORTAEX_0_00D,PORTA,2.860,5.000,1.68,SALA_PAREX_00D
+,SALA_PORTAEX_0_00S,PORTA,2.860,5.000,1.68,SALA_PAREX_00S
+
+
+Interior Door
+
+,,Construction,U-Factor with Film [W/m2-K],U-Factor no Film [W/m2-K],Gross Area [m2],Parent Surface
+,SALA_PORTAIN_0_00E,PORTA,2.275,5.000,1.68,SALA_PARIN_00E
+,SALA_PORTAIN_0_02D,PORTA,2.275,5.000,1.68,SALA_PARIN_02D
+,SALA_PORTAIN_0_01D,PORTA,2.275,5.000,1.68,SALA_PARIN_01D
+,DORM1_PORTAIN_0_00E,PORTA,2.275,5.000,1.68,DORM1_PARIN_00E
+,DORM2_PORTAIN_0_01E,PORTA,2.275,5.000,1.68,DORM2_PARIN_01E
+,BWC_PORTAIN_0_00D,PORTA,2.275,5.000,1.68,BWC_PARIN_00D
+
+
+----------------------------------------------------------------------------------------------------
+REPORT:,Shading Summary
+FOR:,Entire Facility
+Sunlit Fraction
+
+,,March 21 9am,March 21 noon,March 21 3pm,June 21 9am,June 21 noon,June 21 3pm,December 21 9am,December 21 noon,December 21 3pm
+,SALA_JAN_0_00I,0.00,0.00,0.00,0.00,0.00,0.00,1.00,0.00,1.00
+,SALA_JAN_0_01E,0.00,0.00,1.00,0.00,0.00,1.00,0.00,0.00,1.00
+,DORM1_JAN_0_00I,0.00,0.00,0.00,0.00,0.00,0.00,1.00,0.00,0.97
+,DORM2_JAN_0_00D,1.00,1.00,0.00,1.00,1.00,0.00,1.00,1.00,0.00
+,BWC_JAN_0_00E,0.00,0.00,1.00,0.00,0.00,1.00,0.00,0.00,1.00
+
+
+Window Control
+
+,,Name,Type,Shaded Construction,Control,Glare Control
+,None,,,,,
+
+
+----------------------------------------------------------------------------------------------------
+REPORT:,Lighting Summary
+FOR:,Entire Facility
+Interior Lighting
+
+,,Zone Name,Space Name,Space Type,Lighting Power Density [W/m2],Space Area [m2],Total Power [W],End Use Subcategory,Schedule Name,Scheduled Hours/Week [hr],Hours/Week > 1% [hr],Full Load Hours/Week [hr],Return Air Fraction,Conditioned (Y/N),Consumption [kWh]
+,SALA LIGHTS_SALA,SALA,SALA,GENERAL,5.0000,21.43,107.14,GeneralLights,SCH_ILUM_SALA,42.00,42.00,42.00,0.0000,Y,234.64
+,DORM1 LIGHTS_DORM,DORM1,DORM1,GENERAL,5.0000,8.85,44.25,GeneralLights,SCH_ILUM_DORM,28.00,28.00,28.00,0.0000,Y,64.61
+,DORM2 LIGHTS_DORM,DORM2,DORM2,GENERAL,5.0000,8.30,41.51,GeneralLights,SCH_ILUM_DORM,28.00,28.00,28.00,0.0000,Y,60.61
+,Interior Lighting Total,,,,5.0000,38.58,192.91,,,,,,,,359.86
+
+
+Daylighting
+
+,,Zone,Control Name,Daylighting Method,Control Type,Fraction Controlled,Lighting Installed in Zone [W],Lighting Controlled [W]
+,None,,,,,,,
+
+
+Exterior Lighting
+
+,,Total Watts,Astronomical Clock/Schedule,Schedule Name,Scheduled Hours/Week [hr],Hours/Week > 1% [hr],Full Load Hours/Week [hr],Consumption [kWh]
+,Exterior Lighting Total,0.00,,,,,,0.00
+
+
+----------------------------------------------------------------------------------------------------
+REPORT:,Equipment Summary
+FOR:,Entire Facility
+Central Plant
+
+,,Type,Reference Capacity [W],Reference Efficiency [W/W],Rated Capacity [W],Rated Efficiency [W/W],IPLV in SI Units [W/W],IPLV in IP Units [Btu/W-h]
+,None,,,,,,,
+
+
+Cooling Coils
+
+,,Type,Design Coil Load [W],Nominal Total Capacity [W],Nominal Sensible Capacity [W],Nominal Latent Capacity [W],Nominal Sensible Heat Ratio,Nominal Efficiency [W/W],Nominal Coil UA Value [W/C],Nominal Coil Surface Area [m2]
+,None,,,,,,,,,
+
+
+DX Cooling Coils
+
+,,DX Cooling Coil Type,Standard Rated Net Cooling Capacity [W],Standard Rated Net COP [W/W],EER [Btu/W-h],SEER User [Btu/W-h],SEER Standard [Btu/W-h],IEER [Btu/W-h]
+,None,,,,,,,
+
+
+DX Cooling Coils [ SEER2 ]
+
+,,DX Cooling Coil Type,Standard Rated Net Cooling Capacity [W],Standard Rated Net COP2 [W/W],EER2 [Btu/W-h],SEER2 User [Btu/W-h],SEER2 Standard [Btu/W-h],IEER2 [Btu/W-h]
+,None,,,,,,,
+
+
+DX Cooling Coil ASHRAE 127 Standard Ratings Report
+
+,,DX Cooling Coil Type,Rated Net Cooling Capacity Test A [W],Rated Electric Power Test A [W],Rated Net Cooling Capacity Test B [W],Rated Electric Power Test B [W],Rated Net Cooling Capacity Test C [W],Rated Electric Power Test C [W],Rated Net Cooling Capacity Test D [W],Rated Electric Power Test D [W]
+,None,,,,,,,,,
+
+
+Water-to-Air Heat Pumps at Rated Temperatures Report
+
+,,Coil Type,Rated Total Capacity [W],Rated Sensible Capacity [W],Rated Power[W],Rated COP [W/W],Rated Air Dry-bulb Temperature [C],Rated Air Wet-bulb Temperature [C],Rated Water Temperature [C],Design Day used for Sizing
+,None,,,,,,,,,
+
+
+DX Heating Coils
+
+,,DX Heating Coil Type,High Temperature Heating (net) Rating Capacity [W],Low Temperature Heating (net) Rating Capacity [W],HSPF [Btu/W-h],Region Number
+,None,,,,,
+
+
+DX Heating Coils [ HSPF2 ]
+
+,,DX Heating Coil Type,High Temperature Heating (net) Rating Capacity [W],Low Temperature Heating (net) Rating Capacity [W],HSPF2 [Btu/W-h],Region Number
+,None,,,,,
+
+
+Heating Coils
+
+,,Type,Design Coil Load [W],Nominal Total Capacity [W],Nominal Efficiency [W/W]
+,None,,,,
+
+
+Fans
+
+,,Type,Total Efficiency [W/W],Delta Pressure [pa],Max Air Flow Rate [m3/s],Rated Electricity Rate [W],Rated Power Per Max Air Flow Rate [W-s/m3],Motor Heat In Air Fraction,Fan Energy Index,End Use Subcategory,Design Day Name for Fan Sizing Peak,Date/Time for Fan Sizing Peak
+,None,,,,,,,,,,,
+
+
+Pumps
+
+,,Type,Control,Head [pa],Water Flow [m3/s],Electricity Rate [W],Power Per Water Flow Rate [W-s/m3],Motor Efficiency [W/W],End Use Subcategory
+,None,,,,,,,,
+
+
+Service Water Heating
+
+,,Type,Storage Volume [m3],Input [W],Thermal Efficiency [W/W],Recovery Efficiency [W/W],Energy Factor
+,None,,,,,,
+
+
+----------------------------------------------------------------------------------------------------
+REPORT:,HVAC Sizing Summary
+FOR:,Entire Facility
+Zone Sensible Cooling
+
+,,Calculated Design Load [W],User Design Load [W],User Design Load per Area [W/m2],Calculated Design Air Flow [m3/s],User Design Air Flow [m3/s],Design Day Name,Date/Time Of Peak {TIMESTAMP},Thermostat Setpoint Temperature at Peak Load [C],Indoor Temperature at Peak Load [C],Indoor Humidity Ratio at Peak Load [kgWater/kgDryAir],Outdoor Temperature at Peak Load [C],Outdoor Humidity Ratio at Peak Load [kgWater/kgDryAir],Minimum Outdoor Air Flow Rate [m3/s],Heat Gain Rate from DOAS [W]
+,None,,,,,,,,,,,,,,
+The Design Load is the zone sensible load only. It does not include any system effects or ventilation loads.
+
+
+Zone Sensible Heating
+
+,,Calculated Design Load [W],User Design Load [W],User Design Load per Area [W/m2],Calculated Design Air Flow [m3/s],User Design Air Flow [m3/s],Design Day Name,Date/Time Of Peak {TIMESTAMP},Thermostat Setpoint Temperature at Peak Load [C],Indoor Temperature at Peak Load [C],Indoor Humidity Ratio at Peak Load [kgWater/kgDryAir],Outdoor Temperature at Peak Load [C],Outdoor Humidity Ratio at Peak Load [kgWater/kgDryAir],Minimum Outdoor Air Flow Rate [m3/s],Heat Gain Rate from DOAS [W]
+,None,,,,,,,,,,,,,,
+The Design Load is the zone sensible load only. It does not include any system effects or ventilation loads.
+
+
+System Design Air Flow Rates
+
+,,Calculated cooling [m3/s],User cooling [m3/s],Calculated heating [m3/s],User heating [m3/s],Adjusted cooling [m3/s],Adjusted heating [m3/s],Adjusted main [m3/s],Calculated Heating Air Flow Ratio [],User Heating Air Flow Ratio []
+,None,,,,,,,,,
+
+
+Plant Loop Coincident Design Fluid Flow Rate Adjustments
+
+,,Previous Design Volume Flow Rate [m3/s],Algorithm Volume Flow Rate [m3/s],Coincident Design Volume Flow Rate [m3/s],Coincident Size Adjusted,Peak Sizing Period Name,Peak Day into Period {TIMESTAMP}[day],Peak Hour Of Day {TIMESTAMP}[hr],Peak Step Start Minute {TIMESTAMP}[min]
+,None,,,,,,,,
+
+
+Coil Sizing Summary
+
+,,Coil Type,HVAC Type,HVAC Name,Coil Final Gross Total Capacity [W],Coil Final Gross Sensible Capacity [W],Coil Final Reference Air Volume Flow Rate [m3/s],Coil Final Reference Plant Fluid Volume Flow Rate [m3/s],Coil U-value Times Area Value [W/K],Design Day Name at Sensible Ideal Loads Peak,Date/Time at Sensible Ideal Loads Peak,Design Day Name at Air Flow Ideal Loads Peak,Date/Time at Air Flow Ideal Loads Peak,Coil Total Capacity at Ideal Loads Peak [W],Coil Sensible Capacity at Ideal Loads Peak [W],Coil Air Volume Flow Rate at Ideal Loads Peak [m3/s],Coil Entering Air Drybulb at Ideal Loads Peak [C],Coil Entering Air Wetbulb at Ideal Loads Peak [C],Coil Entering Air Humidity Ratio at Ideal Loads Peak [kgWater/kgDryAir],Coil Leaving Air Drybulb at Ideal Loads Peak [C],Coil Leaving Air Wetbulb at Ideal Loads Peak [C],Coil Leaving Air Humidity Ratio at Ideal Loads Peak [kgWater/kgDryAir],Outdoor Air Drybulb at Ideal Loads Peak [C],Outdoor Air Humidity Ratio at Ideal Loads Peak [kgWater/kgDryAir],Outdoor Air Wetbulb at Ideal Loads Peak [C],Outdoor Air Flow Percentage at Ideal Loads Peak [%],Zone Air Drybulb at Ideal Loads Peak [C],Zone Air Humidity Ratio at Ideal Loads Peak [kgWater/kgDryAir],Zone Air Relative Humidity at Ideal Loads Peak [%],Zone Sensible Heat Gain at Ideal Loads Peak [W],Zone Latent Heat Gain at Ideal Loads Peak [W],Coil Total Capacity at Rating Conditions [W],Coil Sensible Capacity at Rating Conditions [W]
+,None,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+
+
+----------------------------------------------------------------------------------------------------
+REPORT:,Coil Sizing Details
+FOR:,Entire Facility
+Coils
+
+,,Coil Type,Coil Location,HVAC Type,HVAC Name,Zone Name(s),System Sizing Method Concurrence,System Sizing Method Capacity,System Sizing Method Air Flow,Autosized Coil Capacity?,Autosized Coil Airflow?,Autosized Coil Water Flow?,OA Pretreated prior to coil inlet?,Coil Final Gross Total Capacity [W],Coil Final Gross Sensible Capacity [W],Coil Final Reference Air Volume Flow Rate [m3/s],Coil Final Reference Plant Fluid Volume Flow Rate [m3/s],Coil U-value Times Area Value [W/K],Terminal Unit Reheat Coil Multiplier,DX Coil Capacity Increase Ratio from Too Low Flow/Capacity Ratio,DX Coil Capacity Decrease Ratio from Too High Flow/Capacity Ratio,Moist Air Heat Capacity [J/kg-K],Dry Air Heat Capacity [J/kg-K],Standard Air Density Adjusted for Elevation [kg/m3],Supply Fan Name for Coil,Supply Fan Type for Coil,Supply Fan Maximum Air Volume Flow Rate [m3/s],Supply Fan Maximum Air Mass Flow Rate [kg/s],Plant Name for Coil,Plant Fluid Specific Heat Capacity [J/kg-K],Plant Fluid Density [kg/m3],Plant Maximum Fluid Mass Flow Rate [kg/s],Plant Design Fluid Return Temperature [C],Plant Design Fluid Supply Temperature [C],Plant Design Fluid Temperature Difference [deltaC],Plant Design Capacity [W],Coil Capacity Percentage of Plant Design Capacity [%],Coil Fluid Flow Rate Percentage of Plant Design Flow Rate [%],Design Day Name at Sensible Ideal Loads Peak,Date/Time at Sensible Ideal Loads Peak,Design Day Name at Total Ideal Loads Peak,Date/Time at Total Ideal Loads Peak,Design Day Name at Air Flow Ideal Loads Peak,Date/Time at Air Flow Ideal Loads Peak,Peak Load Type to Size On,Coil Total Capacity at Ideal Loads Peak [W],Coil Sensible Capacity at Ideal Loads Peak [W],Coil Off-Rating Capacity Modifier at Ideal Loads Peak [ ],Coil Air Mass Flow Rate at Ideal Loads Peak [kg/s],Coil Air Volume Flow Rate at Ideal Loads Peak [m3/s],Coil Entering Air Drybulb at Ideal Loads Peak [C],Coil Entering Air Wetbulb at Ideal Loads Peak [C],Coil Entering Air Humidity Ratio at Ideal Loads Peak [kgWater/kgDryAir],Coil Entering Air Enthalpy at Ideal Loads Peak [J/KG-K],Coil Leaving Air Drybulb at Ideal Loads Peak [C],Coil Leaving Air Wetbulb at Ideal Loads Peak [C],Coil Leaving Air Humidity Ratio at Ideal Loads Peak [kgWater/kgDryAir],Coil Leaving Air Enthalpy at Ideal Loads Peak [J/KG-K],Coil Plant Fluid Mass Flow Rate at Ideal Loads Peak [kg/s],Coil Entering Plant Fluid Temperature at Ideal Loads Peak [C],Coil Leaving Plant Fluid Temperature at Ideal Loads Peak [C],Coil Plant Fluid Temperature Difference at Ideal Loads Peak [deltaC],Supply Fan Air Heat Gain at Ideal Loads Peak [W],Coil and Fan Net Total Capacity at Ideal Loads Peak [W],Outdoor Air Drybulb at Ideal Loads Peak [C],Outdoor Air Humidity Ratio at Ideal Loads Peak [kgWater/kgDryAir],Outdoor Air Wetbulb at Ideal Loads Peak [C],Outdoor Air Volume Flow Rate at Ideal Loads Peak [m3/s],Outdoor Air Flow Percentage at Ideal Loads Peak [%],System Return Air Drybulb at Ideal Loads Peak [C],System Return Air Humidity Ratio at Ideal Loads Peak [kgWater/kgDryAir],Zone Air Drybulb at Ideal Loads Peak [C],Zone Air Humidity Ratio at Ideal Loads Peak [kgWater/kgDryAir],Zone Air Relative Humidity at Ideal Loads Peak [%],Zone Sensible Heat Gain at Ideal Loads Peak [W],Zone Latent Heat Gain at Ideal Loads Peak [W],Coil Total Capacity at Rating Conditions [W],Coil Sensible Capacity at Rating Conditions [W],Coil Air Mass Flow Rate at Rating Conditions [kg/s],Coil Entering Air Drybulb at Rating Conditions [C],Coil Entering Air Wetbulb at Rating Conditions [C],Coil Entering Air Humidity Ratio at Rating Conditions [kgWater/kgDryAir],Coil Entering Air Enthalpy at Rating Conditions [J/KG-K],Coil Leaving Air Drybulb at Rating Conditions [C],Coil Leaving Air Wetbulb at Rating Conditions [C],Coil Leaving Air Humidity Ratio at Rating Conditions [kgWater/kgDryAir],Coil Leaving Air Enthalpy at Rating Conditions [J/KG-K]
+,None,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+
+
+----------------------------------------------------------------------------------------------------
+REPORT:,System Summary
+FOR:,Entire Facility
+Economizer
+
+,,High Limit Shutoff Control,Minimum Outdoor Air [m3/s],Maximum Outdoor Air [m3/s],Return Air Temp Limit,Return Air Enthalpy Limit,Outdoor Air Temperature Limit [C],Outdoor Air Enthalpy Limit [C]
+,None,,,,,,,
+
+
+Demand Controlled Ventilation using Controller:MechanicalVentilation
+
+,,Controller:MechanicalVentilation Name,Outdoor Air Per Person [m3/s-person],Outdoor Air Per Area [m3/s-m2],Outdoor Air Per Zone [m3/s],Outdoor Air ACH [ach],Outdoor Air Method,Outdoor Air Schedule Name,Air Distribution Effectiveness in Cooling Mode,Air Distribution Effectiveness in Heating Mode,Air Distribution Effectiveness Schedule Name
+,None,,,,,,,,,,
+
+
+Time Not Comfortable Based on Simple ASHRAE 55-2004
+
+,,Winter Clothes [hr],Summer Clothes [hr],Summer or Winter Clothes [hr]
+,SALA,2158.92,1101.33,531.33
+,DORM1,2090.33,2586.17,1379.83
+,DORM2,2049.25,2509.42,1287.17
+,BWC,0.00,0.00,0.00
+,Facility,4380.00,3715.58,1979.08
+Aggregated over the RunPeriods for Weather
+
+
+Time Setpoint Not Met
+
+,,During Heating [hr],During Cooling [hr],During Occupied Heating [hr],During Occupied Cooling [hr]
+,SALA,2150.75,3151.42,509.42,358.33
+,DORM1,1914.00,3716.33,1067.08,268.33
+,DORM2,1832.50,3803.75,1104.83,205.00
+,BWC,0.00,0.00,0.00,0.00
+,Facility,2408.50,5192.75,1785.83,727.33
+Aggregated over the RunPeriods for Weather
+
+
+----------------------------------------------------------------------------------------------------
+REPORT:,Outdoor Air Summary
+FOR:,Entire Facility
+Average Outdoor Air During Occupied Hours
+
+,,Average Number of Occupants,Nominal Number of Occupants,Zone Volume [m3],Mechanical Ventilation [ach],Infiltration [ach],AFN Infiltration [ach],Simple Ventilation [ach]
+,SALA,3.00,4.00,53.57,0.000,0.000,6.945,0.000
+,DORM1,2.00,2.00,22.13,0.000,0.000,4.265,0.000
+,DORM2,2.00,2.00,20.76,0.000,0.000,4.621,0.000
+Values shown for a single zone without multipliers
+
+
+Minimum Outdoor Air During Occupied Hours
+
+,,Average Number of Occupants,Nominal Number of Occupants,Zone Volume [m3],Mechanical Ventilation [ach],Infiltration [ach],AFN Infiltration [ach],Simple Ventilation [ach]
+,SALA,3.00,4.00,53.57,0.000,0.000,0.000,0.000
+,DORM1,2.00,2.00,22.13,0.000,0.000,0.000,0.000
+,DORM2,2.00,2.00,20.76,0.000,0.000,0.000,0.000
+Values shown for a single zone without multipliers
+
+
+----------------------------------------------------------------------------------------------------
+REPORT:,Outdoor Air Details
+FOR:,Entire Facility
+Mechanical Ventilation Parameters by Zone
+
+,,AirLoop Name,Average Number of Occupants,Nominal Number of Occupants,Zone Volume [m3],Zone Area [m2],Design Zone Outdoor Airflow - Voz [m3/s],Minimum Dynamic Target Ventilation - Voz-dyn-min [m3/s]
+,SALA,,3.00,4.00,53.57,21.43,,0.000
+,DORM1,,2.00,2.00,22.13,8.85,,0.000
+,DORM2,,2.00,2.00,20.76,8.30,,0.000
+,Total Facility,,7.00,8.00,96.45,38.58,0.0000,0.000
+
+
+Total Outdoor Air by Zone
+
+,,Mechanical Ventilation [m3],Natural Ventilation [m3],Total Ventilation [m3],Infiltration [m3],Total Ventilation and Infiltration [m3],Dynamic Target Ventilation - Voz-dyn [m3],Time Below Voz-dyn [hr],Time At Voz-dyn [hr],Time Above Voz-dyn [hr],Time Above Zero When Unoccupied [hr]
+,SALA,0.00,1167892.99,1167892.99,0.00,1167892.99,0.00,0.00,0.00,8760.00,5840.00
+,DORM1,0.00,352071.72,352071.72,0.00,352071.72,0.00,0.00,0.00,5891.57,3006.96
+,DORM2,0.00,351844.88,351844.88,0.00,351844.88,0.00,0.00,0.00,6318.18,3203.07
+,Total Facility,0.00,1871809.59,1871809.59,0.00,1871809.59,0.00,0.00,0.00,8760.00,8086.88
+
+
+Average Outdoor Air During Occupancy by Zone - Flow Rates
+
+,,Mechanical Ventilation [m3/s],Natural Ventilation [m3/s],Total Ventilation [m3/s],Infiltration [m3/s],Total Ventilation and Infiltration [m3/s],Dynamic Target Ventilation - Voz-dyn [m3/s],Time Below Voz-dyn [hr],Time At Voz-dyn [hr],Time Above Voz-dyn [hr]
+,SALA,0.0000,0.1015,0.1015,0.0000,0.1015,0.0000,0.00,0.00,2920.00
+,DORM1,0.0000,0.0258,0.0258,0.0000,0.0258,0.0000,0.00,0.00,2883.09
+,DORM2,0.0000,0.0262,0.0262,0.0000,0.0262,0.0000,0.00,0.00,3112.03
+,Total Facility,0.0000,0.1534,0.1534,0.0000,0.1534,0.0000,0.00,0.00,6570.00
+
+
+Total Outdoor Air by AirLoop
+
+,,Mechanical Ventilation [m3],Natural Ventilation [m3/s],Total Ventilation [m3/s],Sum Zone Dynamic Target Ventilation - Voz-sum-dyn [m3],Time Below Voz-sum-dyn [hr],Time At Voz-sum-dyn [hr],Time Above Voz-sum-dyn [hr],Time Above Zero When Unoccupied [hr]
+,None,,,,,,,,
+
+
+Average Outdoor Air During Occupancy by AirLoop
+
+,,Mechanical Ventilation [m3/s],Natural Ventilation [m3/s],Total Ventilation [m3/s],Sum Zone Dynamic Target Ventilation - Voz-sum-dyn [m3/s],Time Below Voz-sum-dyn [hr],Time At Voz-sum-dyn [hr],Time Above Voz-sum-dyn [hr]
+,None,,,,,,,
+
+
+Outdoor Air Controller Limiting Factors by AirLoop
+
+,,No Limiting Factor [hr],Limits and Scheduled Limits [hr],Economizer [hr],Exhaust Flow [hr],Mixed Air Flow [hr],High Humidity [hr],Demand Controlled Ventilation [hr],Night Ventilation [hr],Demand Limiting [hr],Energy Management System [hr]
+,None,,,,,,,,,,
+
+
+Average Outdoor Air for Limiting Factors During Occupancy
+
+,,No Limiting Factor [m3/s],Limits and Scheduled Limits [m3/s],Economizer [m3/s],Exhaust Flow [m3/s],Mixed Air Flow [m3/s],High Humidity [m3/s],Demand Controlled Ventilation [m3/s],Night Ventilation [m3/s],Demand Limiting [m3/s],Energy Management System [m3/s]
+,None,,,,,,,,,,
+
+
+----------------------------------------------------------------------------------------------------
+REPORT:,Object Count Summary
+FOR:,Entire Facility
+Surfaces by Class
+
+,,Total,Outdoors
+,Wall,21,11
+,Floor,4,0
+,Roof,5,5
+,Internal Mass,0,0
+,Building Detached Shading,0,0
+,Fixed Detached Shading,0,0
+,Window,5,5
+,Door,8,2
+,Glass Door,0,0
+,Shading,0,0
+,Overhang,0,0
+,Fin,0,0
+,Tubular Daylighting Device Dome,0,0
+,Tubular Daylighting Device Diffuser,0,0
+
+
+HVAC
+
+,,Count
+,HVAC Air Loops,0
+,Conditioned Zones,3
+,Unconditioned Zones,1
+,Supply Plenums,0
+,Return Plenums,0
+
+
+Input Fields
+
+,,Count
+,IDF Objects,201
+,Defaulted Fields,190
+,Fields with Defaults,654
+,Autosized Fields,0
+,Autosizable Fields,12
+,Autocalculated Fields,88
+,Autocalculatable Fields,101
+
+
+----------------------------------------------------------------------------------------------------
+REPORT:,Energy Meters
+FOR:,Entire Facility
+Annual and Peak Values - Electricity
+
+,,Electricity Annual Value [kWh],Electricity Minimum Value [W],Timestamp of Minimum {TIMESTAMP},Electricity Maximum Value [W],Timestamp of Maximum {TIMESTAMP}
+,Electricity:Facility,710.26,0.00,01-JAN-00:05,227.14,01-JAN-16:05
+,Electricity:Building,710.26,0.00,01-JAN-00:05,227.14,01-JAN-16:05
+,Electricity:Zone:SALA,585.04,0.00,01-JAN-00:05,227.14,01-JAN-16:05
+,Electricity:SpaceType:GENERAL,710.26,0.00,01-JAN-00:05,227.14,01-JAN-16:05
+,InteriorLights:Electricity,359.86,0.00,01-JAN-00:05,107.14,01-JAN-16:05
+,InteriorLights:Electricity:Zone:SALA,234.64,0.00,01-JAN-00:05,107.14,01-JAN-16:05
+,InteriorLights:Electricity:SpaceType:GENERAL,359.86,0.00,01-JAN-00:05,107.14,01-JAN-16:05
+,GeneralLights:InteriorLights:Electricity,359.86,0.00,01-JAN-00:05,107.14,01-JAN-16:05
+,GeneralLights:InteriorLights:Electricity:Zone:SALA,234.64,0.00,01-JAN-00:05,107.14,01-JAN-16:05
+,GeneralLights:InteriorLights:Electricity:SpaceType:GENERAL,359.86,0.00,01-JAN-00:05,107.14,01-JAN-16:05
+,Electricity:Zone:DORM1,64.61,0.00,01-JAN-00:05,44.25,01-JAN-06:05
+,InteriorLights:Electricity:Zone:DORM1,64.61,0.00,01-JAN-00:05,44.25,01-JAN-06:05
+,GeneralLights:InteriorLights:Electricity:Zone:DORM1,64.61,0.00,01-JAN-00:05,44.25,01-JAN-06:05
+,Electricity:Zone:DORM2,60.61,0.00,01-JAN-00:05,41.51,01-JAN-06:05
+,InteriorLights:Electricity:Zone:DORM2,60.61,0.00,01-JAN-00:05,41.51,01-JAN-06:05
+,GeneralLights:InteriorLights:Electricity:Zone:DORM2,60.61,0.00,01-JAN-00:05,41.51,01-JAN-06:05
+,InteriorEquipment:Electricity,350.40,0.00,01-JAN-00:05,120.00,01-JAN-14:05
+,InteriorEquipment:Electricity:Zone:SALA,350.40,0.00,01-JAN-00:05,120.00,01-JAN-14:05
+,InteriorEquipment:Electricity:SpaceType:GENERAL,350.40,0.00,01-JAN-00:05,120.00,01-JAN-14:05
+,General:InteriorEquipment:Electricity,350.40,0.00,01-JAN-00:05,120.00,01-JAN-14:05
+,General:InteriorEquipment:Electricity:Zone:SALA,350.40,0.00,01-JAN-00:05,120.00,01-JAN-14:05
+,General:InteriorEquipment:Electricity:SpaceType:GENERAL,350.40,0.00,01-JAN-00:05,120.00,01-JAN-14:05
+,ElectricityPurchased:Facility,710.26,0.00,01-JAN-00:05,227.14,10-MAY-18:25
+,ElectricityPurchased:Plant,710.26,0.00,01-JAN-00:05,227.14,10-MAY-18:25
+,Cogeneration:ElectricityPurchased,710.26,0.00,01-JAN-00:05,227.14,10-MAY-18:25
+,General:Cogeneration:ElectricityPurchased,710.26,0.00,01-JAN-00:05,227.14,10-MAY-18:25
+,ElectricitySurplusSold:Facility,0.00,0.00,01-JAN-00:05,0.00,01-JAN-00:05
+,ElectricitySurplusSold:Plant,0.00,0.00,01-JAN-00:05,0.00,01-JAN-00:05
+,Cogeneration:ElectricitySurplusSold,0.00,0.00,01-JAN-00:05,0.00,01-JAN-00:05
+,General:Cogeneration:ElectricitySurplusSold,0.00,0.00,01-JAN-00:05,0.00,01-JAN-00:05
+,ElectricityNet:Facility,710.26,0.00,01-JAN-00:05,227.14,10-MAY-18:25
+,ElectricityNet:Plant,710.26,0.00,01-JAN-00:05,227.14,10-MAY-18:25
+,Cogeneration:ElectricityNet,710.26,0.00,01-JAN-00:05,227.14,10-MAY-18:25
+,General:Cogeneration:ElectricityNet,710.26,0.00,01-JAN-00:05,227.14,10-MAY-18:25
+
+
+Annual and Peak Values - Natural Gas
+
+,,Natural Gas Annual Value [kWh],Natural Gas Minimum Value [W],Timestamp of Minimum {TIMESTAMP},Natural Gas Maximum Value [W],Timestamp of Maximum {TIMESTAMP}
+,None,,,,,
+
+
+Annual and Peak Values - Cooling
+
+,,Cooling Annual Value [kWh],Cooling Minimum Value [W],Timestamp of Minimum {TIMESTAMP},Cooling Maximum Value [W],Timestamp of Maximum {TIMESTAMP}
+,DistrictCooling:Facility,3265.06,0.00,01-JAN-08:05,5287.72,18-JAN-14:05
+,DistrictCooling:HVAC,3265.06,0.00,01-JAN-08:05,5287.72,18-JAN-14:05
+,Cooling:DistrictCooling,3265.06,0.00,01-JAN-08:05,5287.72,18-JAN-14:05
+,General:Cooling:DistrictCooling,3265.06,0.00,01-JAN-08:05,5287.72,18-JAN-14:05
+
+
+Annual and Peak Values - Water
+
+,,Annual Value [m3],Minimum Value [m3/s],Timestamp of Minimum {TIMESTAMP},Maximum Value [m3/s],Timestamp of Maximum {TIMESTAMP}
+,None,,,,,
+
+
+Annual and Peak Values - Other by Weight/Mass
+
+,,Annual Value [kg],Minimum Value [kg/s],Timestamp of Minimum {TIMESTAMP},Maximum Value [kg/s],Timestamp of Maximum {TIMESTAMP}
+,Carbon Equivalent:Facility,0.00,0.000,01-JAN-00:05,0.000,01-JAN-00:05
+,CarbonEquivalentEmissions:Carbon Equivalent,0.00,0.000,01-JAN-00:05,0.000,01-JAN-00:05
+
+
+Annual and Peak Values - Other Volumetric
+
+,,Annual Value [m3],Minimum Value [m3/s],Timestamp of Minimum {TIMESTAMP},Maximum Value [m3/s],Timestamp of Maximum {TIMESTAMP}
+,None,,,,,
+
+
+Annual and Peak Values - Other Liquid/Gas
+
+,,Annual Value [L],Minimum Value [L],Timestamp of Minimum {TIMESTAMP},Maximum Value [L],Timestamp of Maximum {TIMESTAMP}
+,None,,,,,
+
+
+Annual and Peak Values - Other
+
+,,Annual Value [kWh],Minimum Value [W],Timestamp of Minimum {TIMESTAMP},Maximum Value [W],Timestamp of Maximum {TIMESTAMP}
+,EnergyTransfer:Facility,2998.01,0.00,01-JAN-08:05,2804.82,09-MAR-14:05
+,EnergyTransfer:Building,2998.01,0.00,01-JAN-08:05,2804.82,09-MAR-14:05
+,EnergyTransfer:Zone:SALA,2061.71,0.00,01-JAN-00:05,2804.82,09-MAR-14:05
+,Heating:EnergyTransfer,96.48,0.00,01-JAN-00:05,1409.29,17-JUL-22:05
+,Heating:EnergyTransfer:Zone:SALA,7.42,0.00,01-JAN-00:05,1391.28,17-JUL-14:05
+,General:Heating:EnergyTransfer,96.48,0.00,01-JAN-00:05,1409.29,17-JUL-22:05
+,General:Heating:EnergyTransfer:Zone:SALA,7.42,0.00,01-JAN-00:05,1391.28,17-JUL-14:05
+,Cooling:EnergyTransfer,2901.53,0.00,01-JAN-08:05,2804.82,09-MAR-14:05
+,Cooling:EnergyTransfer:Zone:SALA,2054.29,0.00,01-JAN-00:05,2804.82,09-MAR-14:05
+,General:Cooling:EnergyTransfer,2901.53,0.00,01-JAN-08:05,2804.82,09-MAR-14:05
+,General:Cooling:EnergyTransfer:Zone:SALA,2054.29,0.00,01-JAN-00:05,2804.82,09-MAR-14:05
+,EnergyTransfer:Zone:DORM1,462.26,0.00,01-JAN-08:05,1237.04,21-FEB-22:05
+,Heating:EnergyTransfer:Zone:DORM1,53.76,0.00,01-JAN-00:05,868.94,27-MAY-05:40
+,General:Heating:EnergyTransfer:Zone:DORM1,53.76,0.00,01-JAN-00:05,868.94,27-MAY-05:40
+,Cooling:EnergyTransfer:Zone:DORM1,408.50,0.00,01-JAN-08:05,1237.04,21-FEB-22:05
+,General:Cooling:EnergyTransfer:Zone:DORM1,408.50,0.00,01-JAN-08:05,1237.04,21-FEB-22:05
+,EnergyTransfer:Zone:DORM2,474.04,0.00,01-JAN-08:05,945.36,09-MAR-22:05
+,Heating:EnergyTransfer:Zone:DORM2,35.31,0.00,01-JAN-00:05,584.14,17-JUL-22:05
+,General:Heating:EnergyTransfer:Zone:DORM2,35.31,0.00,01-JAN-00:05,584.14,17-JUL-22:05
+,Cooling:EnergyTransfer:Zone:DORM2,438.73,0.00,01-JAN-08:05,945.36,09-MAR-22:05
+,General:Cooling:EnergyTransfer:Zone:DORM2,438.73,0.00,01-JAN-08:05,945.36,09-MAR-22:05
+,EnergyTransfer:Zone:BWC,0.00,0.00,01-JAN-00:05,0.00,01-JAN-00:05
+,Heating:EnergyTransfer:Zone:BWC,0.00,0.00,01-JAN-00:05,0.00,01-JAN-00:05
+,General:Heating:EnergyTransfer:Zone:BWC,0.00,0.00,01-JAN-00:05,0.00,01-JAN-00:05
+,Cooling:EnergyTransfer:Zone:BWC,0.00,0.00,01-JAN-00:05,0.00,01-JAN-00:05
+,General:Cooling:EnergyTransfer:Zone:BWC,0.00,0.00,01-JAN-00:05,0.00,01-JAN-00:05
+,DistrictHeating:Facility,96.69,0.00,01-JAN-00:05,1582.32,17-JUL-22:05
+,DistrictHeating:HVAC,96.69,0.00,01-JAN-00:05,1582.32,17-JUL-22:05
+,Heating:DistrictHeating,96.69,0.00,01-JAN-00:05,1582.32,17-JUL-22:05
+,General:Heating:DistrictHeating,96.69,0.00,01-JAN-00:05,1582.32,17-JUL-22:05
+
+
+----------------------------------------------------------------------------------------------------
+REPORT:,Sensible Heat Gain Summary
+FOR:,Entire Facility
+Annual Building Sensible Heat Gain Components
+
+,,HVAC Zone Eq & Other Sensible Air Heating [kWh],HVAC Zone Eq & Other Sensible Air Cooling [kWh],HVAC Terminal Unit Sensible Air Heating [kWh],HVAC Terminal Unit Sensible Air Cooling [kWh],HVAC Input Heated Surface Heating [kWh],HVAC Input Cooled Surface Cooling [kWh],People Sensible Heat Addition [kWh],Lights Sensible Heat Addition [kWh],Equipment Sensible Heat Addition [kWh],Window Heat Addition [kWh],Interzone Air Transfer Heat Addition [kWh],Infiltration Heat Addition [kWh],Opaque Surface Conduction and Other Heat Addition [kWh],Equipment Sensible Heat Removal [kWh],Window Heat Removal [kWh],Interzone Air Transfer Heat Removal [kWh],Infiltration Heat Removal [kWh],Opaque Surface Conduction and Other Heat Removal [kWh]
+,SALA,7.422,-2054.27,0.000,0.000,0.000,0.000,654.252,234.643,350.400,1387.922,417.664,25.579,333.696,0.000,-371.07,-150.89,-835.36,-0.00
+,DORM1,53.758,-408.50,0.000,0.000,0.000,0.000,536.037,64.607,0.000,331.187,59.459,0.058,81.596,0.000,-160.90,-196.90,-360.40,0.000
+,DORM2,35.307,-438.73,0.000,0.000,0.000,0.000,536.211,60.606,0.000,1028.244,30.634,0.044,0.047,0.000,-162.06,-307.96,-336.88,-445.42
+,BWC,0.000,0.000,0.000,0.000,0.000,0.000,0.000,0.000,0.000,266.932,9.029,4.066,133.012,0.000,-56.40,-36.12,-320.52,-0.00
+,Total Facility,96.487,-2901.49,0.000,0.000,0.000,0.000,1726.500,359.856,350.400,3014.285,516.787,29.747,548.351,0.000,-750.42,-691.87,-1853.16,-445.42
+
+
+Peak Cooling Sensible Heat Gain Components
+
+,,Time of Peak {TIMESTAMP},HVAC Zone Eq & Other Sensible Air Heating [W],HVAC Zone Eq & Other Sensible Air Cooling [W],HVAC Terminal Unit Sensible Air Heating [W],HVAC Terminal Unit Sensible Air Cooling [W],HVAC Input Heated Surface Heating [W],HVAC Input Cooled Surface Cooling [W],People Sensible Heat Addition [W],Lights Sensible Heat Addition [W],Equipment Sensible Heat Addition [W],Window Heat Addition [W],Interzone Air Transfer Heat Addition [W],Infiltration Heat Addition [W],Opaque Surface Conduction and Other Heat Addition [W],Equipment Sensible Heat Removal [W],Window Heat Removal [W],Interzone Air Transfer Heat Removal [W],Infiltration Heat Removal [W],Opaque Surface Conduction and Other Heat Removal [W]
+,SALA,09-MAR-14:01,0.00,-11038.89,0.00,0.00,0.00,0.00,55.90,0.00,120.00,791.80,43.66,7.52,10020.02,0.00,-0.00,0.00,0.00,0.00
+,DORM1,21-FEB-22:01,0.00,-3952.38,0.00,0.00,0.00,0.00,77.68,44.25,0.00,0.00,0.00,0.00,4188.64,0.00,-30.41,-327.78,0.00,0.00
+,DORM2,21-FEB-22:01,0.00,-3739.85,0.00,0.00,0.00,0.00,72.75,41.51,0.00,0.00,0.00,1.29,3661.07,0.00,-32.25,-4.51,0.00,0.00
+,BWC,-,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00
+,Total Facility,09-MAR-14:01,0.00,-11038.89,0.00,0.00,0.00,0.00,55.90,0.00,120.00,1188.25,43.66,7.52,9630.92,0.00,0.00,-1.06,-6.29,0.00
+
+
+Peak Heating Sensible Heat Gain Components
+
+,,Time of Peak {TIMESTAMP},HVAC Zone Eq & Other Sensible Air Heating [W],HVAC Zone Eq & Other Sensible Air Cooling [W],HVAC Terminal Unit Sensible Air Heating [W],HVAC Terminal Unit Sensible Air Cooling [W],HVAC Input Heated Surface Heating [W],HVAC Input Cooled Surface Cooling [W],People Sensible Heat Addition [W],Lights Sensible Heat Addition [W],Equipment Sensible Heat Addition [W],Window Heat Addition [W],Interzone Air Transfer Heat Addition [W],Infiltration Heat Addition [W],Opaque Surface Conduction and Other Heat Addition [W],Equipment Sensible Heat Removal [W],Window Heat Removal [W],Interzone Air Transfer Heat Removal [W],Infiltration Heat Removal [W],Opaque Surface Conduction and Other Heat Removal [W]
+,SALA,17-JUL-14:01,6956.47,0.00,0.00,0.00,0.00,0.00,188.19,0.00,120.00,68.10,0.00,0.00,0.00,0.00,-0.00,-12.66,-75.22,-7244.89
+,DORM1,17-JUL-22:01,3302.32,0.00,0.00,0.00,0.00,0.00,162.00,44.25,0.00,0.00,35.67,0.00,0.00,0.00,-19.33,0.00,-10.88,-3514.04
+,DORM2,17-JUL-22:01,2920.71,0.00,0.00,0.00,0.00,0.00,162.00,41.51,0.00,0.00,0.77,0.00,0.00,0.00,-17.58,0.00,-7.64,-3099.77
+,BWC,-,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00
+,Total Facility,17-JUL-14:01,6956.47,0.00,0.00,0.00,0.00,0.00,188.19,0.00,120.00,122.93,5.35,0.00,0.00,0.00,0.00,-12.66,-117.00,-7263.28
+
+
+----------------------------------------------------------------------------------------------------
+REPORT:,LEED Summary
+FOR:,Entire Facility
+Sec1.1A-General Information
+
+,,Data
+,Weather File,ANO ** Sao.Paulo-Congonhas.AP SP BRA SRC-TMYx WMO#=837800
+,Total gross floor area [m2],43.24
+,Principal Heating Source,District Heat
+
+
+EAp2-1. Space Usage Type
+
+,,Space Area [m2],Regularly Occupied Area [m2],Unconditioned Area [m2],Typical Hours/Week in Operation [hr/wk]
+,SALA,21.43,21.43,0.00,56.00
+,DORM1,8.85,8.85,0.00,70.00
+,DORM2,8.30,8.30,0.00,70.00
+,BWC,4.66,0.00,4.66,0.00
+,Totals,43.24,38.58,4.66,
+
+
+EAp2-2. Advisory Messages
+
+,,Data
+,Number of hours heating loads not met,1785.83
+,Number of hours cooling loads not met,727.33
+,Number of hours not met,2511.00
+
+
+EAp2-3. Energy Type Summary
+
+,,Utility Rate,Virtual Rate [$/unit energy],Units of Energy,Units of Demand
+,None,,,,
+
+
+EAp2-4/5. Performance Rating Method Compliance
+
+,,Electricity Energy Use [kWh],Electricity Demand [W],Natural Gas Energy Use [kWh],Natural Gas Demand [W],Gasoline Use [kWh],Gasoline Demand [W],Diesel Use [kWh],Diesel Demand [W],Coal Use [kWh],Coal Demand [W],Fuel Oil No 1 Use [kWh],Fuel Oil No 1 Demand [W],Fuel Oil No 2 Use [kWh],Fuel Oil No 2 Demand [W],Propane Use [kWh],Propane Demand [W],Other Fuel 1 Use [kWh],Other Fuel 1 Demand [W],Other Fuel 2 Use [kWh],Other Fuel 2 Demand [W],District Cooling Use [kWh],District Cooling Demand [W],District Heating Use [kWh],District Heating Demand [W]
+,Heating -- General,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,96.69,1582.32
+,Cooling -- General,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,3265.06,5287.72,0.00,0.00
+,Interior Lighting -- GeneralLights,359.86,107.14,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00
+,Exterior Lighting -- Not Subdivided,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00
+,Interior Equipment -- General,350.40,120.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00
+,Exterior Equipment -- Not Subdivided,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00
+,Fans -- Not Subdivided,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00
+,Pumps -- Not Subdivided,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00
+,Heat Rejection -- Not Subdivided,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00
+,Humidification -- Not Subdivided,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00
+,Heat Recovery -- Not Subdivided,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00
+,Water Systems -- Not Subdivided,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00
+,Refrigeration -- Not Subdivided,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00
+,Generators -- General,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00
+
+
+EAp2-6. Energy Use Summary
+
+,,Process Subtotal [kWh],Total Energy Use [kWh]
+,Electricity,350.40,710.26
+,Natural Gas,0.00,0.00
+,Additional,0.00,3361.75
+,Total,350.40,4072.01
+
+
+EAp2-7. Energy Cost Summary
+
+,,Process Subtotal [$],Total Energy Cost [$]
+,Electricity,0.00,
+,Natural Gas,0.00,
+,Additional,0.00,
+,Total,0.00,
+Process energy cost based on ratio of process to total energy.
+
+
+L-1. Renewable Energy Source Summary
+
+,,Rated Capacity [kW],Annual Energy Generated [kWh]
+,Photovoltaic,0.00,0.00
+,Wind,0.00,0.00
+
+
+EAp2-17a. Energy Use Intensity - Electricity
+
+,,Electricty [kWh/m2]
+,Interior Lighting (All),8.32
+,Space Heating,0.00
+,Space Cooling,0.00
+,Fans (All),0.00
+,Service Water Heating,0.00
+,Receptacle Equipment,8.10
+,Miscellaneous (All),16.43
+,Subtotal,16.43
+
+
+EAp2-17b. Energy Use Intensity - Natural Gas
+
+,,Natural Gas [kWh/m2]
+,Space Heating,0.00
+,Service Water Heating,0.00
+,Miscellaneous (All),0.00
+,Subtotal,0.00
+
+
+EAp2-17c. Energy Use Intensity - Additional
+
+,,Additional [kWh/m2]
+,Subtotal,0.00
+,Miscellaneous,0.00
+
+
+EAp2-18. End Use Percentage
+
+,,Percent [%]
+,Interior Lighting (All),8.84
+,Space Heating,2.37
+,Space Cooling,80.18
+,Fans (All),0.00
+,Service Water Heating,0.00
+,Receptacle Equipment,8.61
+,Miscellaneous,0.00
+
+
+Schedules-Equivalent Full Load Hours (Schedule Type=Fraction)
+
+,,Equivalent Full Load Hours of Operation Per Year [hr],Hours > 1% [hr]
+,None,,
+
+
+Schedules-SetPoints (Schedule Type=Temperature)
+
+,,First Object Used,Month Assumed,11am First Wednesday [C],Days with Same 11am Value,11pm First Wednesday [C],Days with Same 11pm Value
+,HVACTEMPLATE-ALWAYS 21,TERMOSTATO DUAL SP CONTROL,July,21.00,365,21.00,365
+,HVACTEMPLATE-ALWAYS 23,TERMOSTATO DUAL SP CONTROL,January,23.00,365,23.00,365
+
+
+----------------------------------------------------------------------------------------------------
+REPORT:,Annual CO2 Resilience Summary
+FOR:,Entire Facility
+CO2 Level Hours
+
+,,Safe (<= 1000 ppm) [hr],Caution (> 1000, <= 5000 ppm) [hr],Hazard (> 5000 ppm) [hr]
+,None,,,
+
+
+CO2 Level OccupantHours
+
+,,Safe (<= 1000 ppm) [hr],Caution (> 1000, <= 5000 ppm) [hr],Hazard (> 5000 ppm) [hr]
+,None,,,
+
+
+CO2 Level OccupiedHours
+
+,,Safe (<= 1000 ppm) [hr],Caution (> 1000, <= 5000 ppm) [hr],Hazard (> 5000 ppm) [hr]
+,None,,,
+
+
+----------------------------------------------------------------------------------------------------
+REPORT:,Annual Visual Resilience Summary
+FOR:,Entire Facility
+Illuminance Level Hours
+
+,,A Bit Dark (<= 100 lux) [hr],Dim (> 100, <= 300 lux) [hr],Adequate (> 300, <= 500 lux) [hr],Bright (>500 lux) [hr]
+,None,,,,
+
+
+Illuminance Level OccupantHours
+
+,,A Bit Dark (<= 100 lux) [hr],Dim (> 100, <= 300 lux) [hr],Adequate (> 300, <= 500 lux) [hr],Bright (>500 lux) [hr]
+,None,,,,
+
+
+Illuminance Level OccupiedHours
+
+,,A Bit Dark (<= 100 lux) [hr],Dim (> 100, <= 300 lux) [hr],Adequate (> 300, <= 500 lux) [hr],Bright (>500 lux) [hr]
+,None,,,,
+
+

@@ -3,7 +3,7 @@ pen = turtle.Pen()
 wn = turtle.Screen()
 wn.bgcolor('black')
 pen.pencolor('white')
-pen.speed(5)
+pen.speed(10)
 
 
 def rectangle(x, y):
@@ -36,22 +36,28 @@ def make_house(largura, altura, comprimento):
     paralelepipedo(comprimento, altura)
     pen.end_fill()
 
+    pen.setpos(initial)
+    pen.setheading(45)
+    pen.forward(comprimento)
+    pen.fillcolor('blue')
+    pen.begin_fill()
     rectangle(largura, altura)
+    pen.end_fill()
 
     pen.setpos(initial)
     pen.setheading(45)
     pen.forward(comprimento)
 
-    pen.fillcolor('blue')
-    pen.begin_fill()
+    pen.up()
+    pen.setpos(initial)
+    pen.down()
     rectangle(largura, altura)
-    pen.end_fill()
 
     pen.up()
     pen.setpos(largura, 0)
     pen.down()
     paralelepipedo(comprimento, altura)
 
-make_house(10,5,10)
+make_house(40,10,10)
 
 wn.mainloop()

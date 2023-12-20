@@ -109,6 +109,6 @@ def make_house(largura, altura, comprimento, fill_front=False, fill_back=False, 
         pen.forward(largura)
         pen.end_fill() 
 
-make_house(20,10,30, fill_back=True, color_floor=True, fill_front=True)
+make_house(25,15,40, fill_back=True, color_floor=True, fill_front=True)
 pen.hideturtle()
 wn.mainloop()

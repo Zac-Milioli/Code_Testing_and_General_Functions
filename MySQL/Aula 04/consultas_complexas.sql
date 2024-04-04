@@ -1,3 +1,10 @@
+/*
+Feito por ZAC MILIOLI
+Data 27/03/2024
+Aula 05 Modelagem de Bancos de Dados Relacionais
+SSMS
+*/
+
 USE HospitalSaude;
 
 -- Listar todos os pacientes com suas respectivas consultas e situações.

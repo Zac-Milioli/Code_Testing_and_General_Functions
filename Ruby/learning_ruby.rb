@@ -1,11 +1,17 @@
+# Ruby - Básicos
+
 estilo = "Rock"
 duracao = "3"
 puts("Estilo: " + estilo + "\nDuração: " + duracao + " minutos")
+
+# Variáveis
 
 inteiro = 1
 float = 1.2
 booleano = true
 nulo = nil
+
+# Strings
 
 frase = "   Hambuguer   "
 puts(frase.strip())
@@ -26,6 +32,9 @@ frase5 = "Certa vez em Campo Grande"
 puts(frase5[13, 24])
 puts(frase5.index("Grande"))
 
+
+# Matemática e Números
+
 puts 100 * 13
 puts 2 ** 10
 puts 100 + 13
@@ -39,3 +48,4 @@ puts("ABS = " + num2.abs.to_s)
 num3 = 3.14548
 puts("Arredondando = " + num3.round().to_s)
 puts("Arredondando pra cima = " + num3.ceil().to_s)
+

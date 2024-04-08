@@ -1,8 +1,12 @@
 # Ruby - Básicos
+=begin
+FEITO POR ZAC MILIOLI
+ESTUDANDO RUBY BÁSICO
+=end
 
 estilo = "Rock"
 duracao = "3"
-puts("Estilo: " + estilo + "\nDuração: " + duracao + " minutos")
+puts("Estilo: #{estilo}\nDuração: #{duracao} minutos")
 
 # Variáveis
 
@@ -62,6 +66,12 @@ puts(frase4.include? "apple")
 frase5 = "Certa vez em Campo Grande"
 puts(frase5[13, 24])
 puts(frase5.index("Grande"))
+
+frase6 = "Fazendo um split"
+puts(frase6.split(" "))
+
+frase7 = "substituições cachorro"
+puts(frase7.gsub('cachorro', 'bacanas'))
 
 
 # Matemática e Números
@@ -125,3 +135,96 @@ negacao = false
 if !negacao
     puts("Não é negação")
 end
+
+def match_case(dia)
+    case day
+    when "Segunda"
+        puts("Dia de trabalho")
+    when "Sábado"
+        puts("Dia de descanso")
+    else
+        puts("Dia de qualquer coisa")
+    end
+    return "Fim"
+end
+
+index = 1
+while index <= 10
+    puts index
+    index += 1
+end
+
+frutas = ["banana", "maçã", "morango", "abacaxi", "abacate"]
+for i in frutas
+    print i + ' '
+end
+puts
+
+frutas.each do |i|
+    print i + ' '
+end
+puts
+
+6.times do |i|
+    print i
+end
+puts
+
+File.open("texto.txt", "r") do |file|
+    for line in file.readlines()
+        puts line
+    end
+    file.close()
+end
+
+File.open("texto.txt", "a") do |file|
+    file.write("\nAdicionando linha nova")
+end
+
+begin
+    num = 10/0
+rescue ZeroDivisionError => e
+    puts e
+end
+
+# Objetos e Módulos
+
+class Feiticeiro
+    attr_accessor :nome, :elemento, :poder
+    def initialize(nome, elemento, poder)
+        @nome = nome
+        @elemento = elemento
+        @poder = poder
+        puts "O feiticeiro "+ @nome +" de " + @elemento + " se ergue com " + @poder.to_s + " de poder!"
+    end
+
+    def magia
+        puts "Magia de " + @elemento + " foi lançada por " + @nome + "!"
+    end
+end
+
+gargamel = Feiticeiro.new(nome="Gargamel", elemento="Pedra", poder=500)
+gargamel.magia
+
+class Familiar < Feiticeiro
+    def initialize(pet_name, pet_type)
+        @pet_name = pet_name
+        @pet_type = pet_type
+        puts "Encontra-se "+ @pet_name + ", um familiar do tipo " + @pet_type
+    end
+end
+
+pet = Familiar.new(pet_name='Bobby', pet_type="Cão das neves")
+
+module Various
+    def hello_world_salted(salt)
+        puts "hello world #{salt}!"
+    end
+    def greet(name)
+        puts "Pleasured to meet you, #{name}"
+    end
+end
+
+include Various
+Various.hello_world_salted("Marcelo")
+Various.greet("Lohaine")

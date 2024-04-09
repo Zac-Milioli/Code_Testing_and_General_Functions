@@ -228,3 +228,9 @@ end
 include Various
 Various.hello_world_salted("Marcelo")
 Various.greet("Lohaine")
+
+# Usando a função system
+system("echo Hello World!")
+
+# Usando crases
+`echo Hello World!`

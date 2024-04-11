@@ -179,6 +179,7 @@ end
 
 File.open("texto.txt", "a") do |file|
     file.write("\nAdicionando linha nova")
+    file.close()
 end
 
 begin

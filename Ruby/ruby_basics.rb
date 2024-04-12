@@ -13,7 +13,11 @@ puts("Estilo: #{estilo}\nDuração: #{duracao} minutos")
 inteiro = 1
 float = 1.2
 booleano = true
+# Negação
+puts !booleano
+
 nulo = nil
+nulo2 = Null
 
 array = [0,1,2,3,4,5,6,7,8,9]
 puts array[0]

@@ -1,5 +1,8 @@
 // Importando a função de input
 import java.util.Scanner;
+import java.util.Arrays;
+import java.util.ArrayList;
+import java.util.Comparator;
 
 class JavaBasics{
     static int var_global = 25;
@@ -15,8 +18,11 @@ class JavaBasics{
         System.out.println("Exemplo linha 2");
 
         boolean opt1 = true, opt2 = false;
+        // AND
         System.out.println(opt1 && opt2);
+        // OR
         System.out.println(opt1 || opt2);
+        // NOT
         System.out.println(!opt1);
 
         int soma1 = 0, subtrai1 = 10;
@@ -117,9 +123,201 @@ class JavaBasics{
         int int_convertido = Integer.parseInt(scanner.nextLine());
         System.out.println(int_convertido);
 
+        System.out.println("\n".repeat(60));
+
+        System.out.println("Calculadora");
+        System.out.println("Digite dois valores");
+        System.out.println("- ".repeat(45));
+
+        System.out.print("- ");
+        double num1 = scanner.nextDouble();
+        scanner.nextLine();
+        
+        System.out.print("- ");
+        double num2 = scanner.nextDouble();
+        scanner.nextLine();
+        
+        System.out.println("\nDigite o operador");
+        System.out.print("- ");
+        String operator = scanner.nextLine();
+
+        if (operator.equals("+")){
+            System.out.printf("%f + %f = %f", num1, num2, num1+num2);
+        } else if (operator.equals("-")){
+            System.out.printf("%f - %f = %f", num1, num2, num1-num2);
+        } else if (operator.equals("*") || operator.toLowerCase().equals("x")){
+            System.out.printf("%f * %f = %f", num1, num2, num1*num2);
+        } else if (operator.equals("/") || operator.equals("\\")){
+            if (num2 != 0){
+                System.out.printf("%f / %f = %f", num1, num2, num1/num2);
+            } else {
+                System.out.printf("DIVISÃO POR ZERO!!");
+            }
+        } else if (operator.equals("%")){
+            System.out.printf("%f %% %f = %f", num1, num2, num1%num2);
+        } else {
+            System.out.printf("A operação %s não é suportada", operator);
+        }
+
+        System.out.println("\n".repeat(60));
+        System.out.println("Digite as 3 primeiras letras de qualquer dia da semana");
+        System.out.println("- ".repeat(45));
+        String dia_semana = scanner.nextLine();
+
+        switch(dia_semana.toLowerCase()){
+            case "dom":
+                System.out.printf("%s significa Domingo!", dia_semana);
+                break;
+            case "seg":
+                System.out.printf("%s significa Segunda!", dia_semana);
+                break;
+            case "ter":
+                System.out.printf("%s significa Terça!", dia_semana);
+                break;
+            case "qua":
+                System.out.printf("%s significa Quarta!", dia_semana);
+                break;
+            case "qui":
+                System.out.printf("%s significa Quinta!", dia_semana);
+                break;
+            case "sex":
+                System.out.printf("%s significa Sexta!", dia_semana);
+                break;
+            case "sab":
+                System.out.printf("%s significa Sábado!", dia_semana);
+                break;
+            default:
+                System.out.printf("%s não é um dia da semana", dia_semana);    
+        }
         scanner.close();
+        System.out.println("\n".repeat(10));
+
+        // Arrays
+        String week[] = new String[7];
+        String week2[] = {"Domingo", "Segunda", "Terça", "Quarta", "Quinta", "Sexta", "Sábado"};
+
+        week[0] = "Domingo";
+        week[1] = "Segunda";
+        week[2] = "Terça";
+        week[3] = "Quarta";
+        week[4] = "Quinta";
+        week[5] = "Sexta";
+        week[6] = "Sábado";
+
+        System.out.println(week);
+        System.out.println(week[2]);
+        System.out.println(Arrays.toString(week));
+        System.out.println(week2);
+        System.out.println(week2[2]);
+        System.out.println(Arrays.toString(week2));
+        System.out.println(week2.length);
+
+        // Pode ser adicionado slices no sort, fazendo Arrays.sort(lista, começo_index, fim_index) com o fim não incluso
+        Arrays.sort(week);
+        System.out.println(Arrays.toString(week));
+
+        String busca = "Sábado";
+        // Pode ser adicionado slices de busca no binarySearch, fazendo Arrays.binarySearch(lista, começo_idex, fim_index, valor_buscado) com o fim não incluso
+        int buscarItem = Arrays.binarySearch(week2, busca);
+        System.out.printf("Encontrou %s no index %d\n", busca, buscarItem);
+
+        // Este método substitui todos os itens selecionados pelo parâmetro passado. Pode ser adicionado index de início e fim, com o fim não incluso
+        Arrays.fill(week, "Zac");
+        System.out.println(Arrays.toString(week));
+
+        int[] nums = {1,2,3,4,5,6,7,8};
+        int[] numsCopia = nums;
+        System.out.println(Arrays.toString(nums));
+        System.out.println(Arrays.toString(numsCopia));
+        // Java lida com variáveis recebendo outras como valor apontando ambas para o mesmo espaço de memória,
+        // portanto, modificações feitas em uma são aplicadas na outra
+        // Uma cópia em um espaço de memória diferente pode ser feita da seguinte forma
+        int[] numsCopiaDiferente = Arrays.copyOf(nums, nums.length);
+        // Caso queira mudar o tamanho do Array sendo copiado, basta alterar o tamanho. Caso seja maior, incluirá 0 nos espaços não existentes
+        // Se for menor, será feito slicing
+        // Alternativamente, pode ser selecionado o range a ser usado fazendo Arrays.copyOfRange(lista, começo_index, fim_index) com o fim não incluso
+        int[] numsCopiaRange = Arrays.copyOfRange(nums, 0, 5);
+        Arrays.fill(nums, 0);
+        System.out.println(Arrays.toString(nums));
+        System.out.println(Arrays.toString(numsCopia));
+        System.out.println(Arrays.toString(numsCopiaDiferente));
+        System.out.println(Arrays.toString(numsCopiaRange));
+
+        // LOOPS
+
+        // Equivalente ao "for _ in lista:" do python
+        for (int i : numsCopiaDiferente){
+            System.out.println(i);
+        }
+
+        System.out.println("\n".repeat(10));
+        for (int numero = 1; numero <= 10; numero++){
+            System.out.println(numero);
+        }
+
+        int soma = 0;
+        int stop = 50;
+        while (soma <= stop){
+            System.out.println(soma);
+            soma++;
+        }
+
+        // Forma alternativa de usar while loop. A condição é verificada ao final do loop ao invés do início
+        soma = 0;
+        do{
+            System.out.println(soma);
+            soma++;
+        } while(soma <= stop);
+
+        // Criando um array lista
+        // Todos os valores primitivos possuem uma versão class com funções extras
+        ArrayList<Integer> numbersList = new ArrayList<Integer>();
+        numbersList.add(1);
+        numbersList.add(2);
+        numbersList.add(1);
+        numbersList.add(4);
+        numbersList.add(6);
+        numbersList.add(10);
+        System.out.println(numbersList.toString());
+        // O get usa o index para buscar
+        System.out.println(numbersList.get(4));
+        // O remove também usa o index
+        numbersList.remove(3);
+        System.out.println(numbersList.toString());
+        // O index de valores diferentes pode ser buscado usando valueOf
+        numbersList.remove(Integer.valueOf(1));
+        System.out.println(numbersList.toString());
+        // A lista pode ser limpa usando o método clear
+        // numbersList.clear();
+        // A função valueOf também pode ser usada para adicionar itens a um array list
+        numbersList.set(1, Integer.valueOf(40));
+        System.out.println(numbersList.toString());
+        // Para ordenar listas é necessário usar alguma função do Comparator
+        numbersList.sort(Comparator.naturalOrder());
+        System.out.println(numbersList.toString());
+        numbersList.sort(Comparator.reverseOrder());
+        System.out.println(numbersList.toString());
+        // Para retornar o tamanho
+        System.out.println(numbersList.size());
+        // Para verificar se há um valor específico na lista
+        System.out.println(numbersList.contains(Integer.valueOf(40)));
+        // Verificar se é vazio
+        System.out.println(numbersList.isEmpty());
+        
+        // Loop para percorrer a lista
+        numbersList.forEach(variavel_loop -> {
+            System.out.println(variavel_loop);
+        });
+        
+        // Exemplo de aplicação
+        numbersList.forEach(valor_index -> {
+            numbersList.set(numbersList.indexOf(valor_index), valor_index*2);
+        });
+        System.out.println(numbersList.toString());
     }
 }
+
+
 
 // Solicitado ao Copilot para fins de estudo e documentação
 class VariableTypes {

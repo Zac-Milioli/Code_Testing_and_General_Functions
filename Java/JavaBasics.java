@@ -3,6 +3,8 @@ import java.util.Scanner;
 import java.util.Arrays;
 import java.util.ArrayList;
 import java.util.Comparator;
+import java.util.HashMap;
+import java.time.LocalDate;
 
 class JavaBasics{
     static int var_global = 25;
@@ -314,13 +316,67 @@ class JavaBasics{
             numbersList.set(numbersList.indexOf(valor_index), valor_index*2);
         });
         System.out.println(numbersList.toString());
+
+
+        System.out.println("\n".repeat(10));
+
+        // Dentro de hashmaps os pares precisam ter seus tipos indicados
+        HashMap<String, Integer> estoque = new HashMap<String, Integer>();
+        // O método put serve para incluir itens dentro de um hashmap
+        estoque.put("Arroz", 21);
+        estoque.put("Feijão", 18);
+        estoque.put("Farinha", 20);
+        estoque.put("Pão", 9);
+        // Alternativamente, itens podem ser incluidos APENAS se ainda não existirem no HashMap usando putIfAbsent
+        // Caso o item exista, a função é skipada
+        estoque.putIfAbsent("Feijão", 10);
+        estoque.putIfAbsent("Macarrão", 8);
+        // O valor das chaves pode ser atualizado ou alterado utilizando o método replace
+        estoque.replace("Arroz", 16);
+        // O hashmap pode ser limpo usando o método clear
+        // estoque.clear();
+
+        // A remoção de itens pode ser feita com o método remove
+        estoque.remove("Macarrão");
+
+        System.out.println(estoque.toString());
+
+        // Para buscar itens no hashmap pode ser usado o método get, retornando null caso o item não exista
+        System.out.println(estoque.get("Pão"));
+        // Alternativamente, pode ser usado o método getOrDefault para retornar um valor definido caso o item não exista
+        System.out.println(estoque.getOrDefault("Chocolate", -1));
+        // Para verificar a presença de alguma chave ou valor no hashmap podem ser usadas as funções contaisKey e containsValue
+        System.out.println(estoque.containsKey("Arroz"));
+        System.out.println(estoque.containsValue(Integer.valueOf(16)));
+        // Pode verificar se o hashmap é vazio usando a função isEmpty
+        System.out.println(estoque.isEmpty());
+        // Loop que precorre o hashmap tal qual "for key, value in hashmap:"
+        estoque.forEach((key, value) -> {
+            System.out.println(key + " na quantidade " + value);
+            estoque.replace(key, value+5);
+        });
+        System.out.println(estoque.toString());
+
+        // Mexendo com objetos
+        System.out.println("\n".repeat(10));
+        Person pessoa1 = new Person("Test Buddy 1", "2024-04-16");
+        System.out.printf("%s é o primeiro teste com orientação a objetos em java,\nfeito em %s, ou seja, %d dias atrás\n", pessoa1.name, pessoa1.getDate(), pessoa1.tempoPassado());
+    
+        Item chaveDeFenda = new Item("Chave de Fenda", "Uma ferramenta muito util");
+
+        pessoa1.colocarNoInventario(chaveDeFenda);
+
+        System.out.println("\nInventário:");
+        System.out.println(pessoa1.inventory.toString());
+
+        PersonChild pessoa2 = new PersonChild("Megaman", "Filho do Megaman");
+        System.out.println(pessoa2);
     }
 }
 
 
-
 // Solicitado ao Copilot para fins de estudo e documentação
-class VariableTypes {
+public class VariableTypes {
     // Primitive types
 
     // Integer

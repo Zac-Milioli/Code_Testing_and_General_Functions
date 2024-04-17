@@ -1,0 +1,12 @@
+const read = require("readline-sync")
+const fs = require("fs")
+
+console.log("\n".repeat(80))
+console.log("- ".repeat(50))
+let input = read.question("\nInsira um texto para colocar no arquivo de texto\n\n/ ")
+let nome = read.question("\n\nInsira o nome do arquivo (sem .txt)\n\n/ ")
+console.log("- ".repeat(50))
+fs.writeFileSync(nome+'.txt', input)
+console.log("- ".repeat(50))
+console.log("\n".repeat(80))
+console.log("Arquivo "+nome+".txt criado com o conteúdo solicitado\n")

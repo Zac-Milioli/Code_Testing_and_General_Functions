@@ -1,0 +1,9 @@
+IMPORTANTE
+É possível misturar os tipos de gráficos apenas executando um tipo seguido do outro
+
+Ex.:
+- é criado um bar chart (plt.bar(args))
+- em seguida, é criado um plot (plt.plot(args))
+
+Dessa forma, os dois gráficos aparecerão na mesma tela, um sobre o outro na ordem de
+criação

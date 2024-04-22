@@ -16,7 +16,8 @@ plt.style.use('seaborn-v0_8-dark')
 # sizes = [209, 486, 381, 255, 191, 315, 185, 228, 174, 538, 239, 394, 399, 153, 273, 293, 436, 501, 397, 539]
 
 # # s é o tamanho dos pontos (pode ser uma lista)
-# # c é a cor do marcador (pode ser uma lista). Pode ser usado um cmap como argumento https://matplotlib.org/3.1.0/tutorials/colors/colormaps.html
+# # c é a cor do marcador (pode ser uma lista). 
+# # Pode ser usado um cmap como argumento para definir o esquema de cores https://matplotlib.org/3.1.0/tutorials/colors/colormaps.html
 # plt.scatter(x, y, s=sizes, c=colors, cmap='Greens', marker='v', edgecolor='black', linewidth=1, alpha=0.5)
 
 # # É adicionado uma barra em gradiente com as cores como legenda
@@ -30,7 +31,7 @@ ratio = data['ratio']
 
 plt.scatter(view_count, likes, c=ratio, cmap='summer', edgecolors='black', linewidth=1, alpha=0.5)
 
-# Definindo a escala do plot
+# Definindo a escala do plot para melhor visualização dos dados
 plt.xscale('log')
 plt.yscale('log')
 

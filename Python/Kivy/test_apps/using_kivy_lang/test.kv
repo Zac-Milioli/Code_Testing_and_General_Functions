@@ -1,0 +1,19 @@
+#:kivy 1.0
+
+<Incrementador>:
+    orientation:
+        'vertical'
+    Button:
+        text:
+            "AUMENTE A FONTE"
+        font_size:
+            30
+        on_release:
+            label.text = str(int(label.text)+1)
+            label.font_size = label.font_size +1
+    Label:
+        id:label
+        text:
+            "0"
+        font_size:
+            0

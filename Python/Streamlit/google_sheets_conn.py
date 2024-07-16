@@ -1,7 +1,10 @@
 import streamlit as st
+# Próprio do streamlit para fazer query SQL dentro da planilha google sheets ou retorná-la
 from streamlit_gsheets import GSheetsConnection
+# Usado para adicionar dados na planilha
 import gspread
 from google.oauth2.service_account import Credentials
+
 import json
 
 # ESTA VARIÁVEL É SENSÍVEL E NA APLICAÇÃO REAL DEVE SER ADICIONADA AO ENV DO STREAMLIT E ACESSADA ATRAVÉS DE st.secrets["credentials"]

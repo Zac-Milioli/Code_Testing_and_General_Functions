@@ -1,4 +1,5 @@
 import streamlit as st
+# Esconde os itens do cabeçalho, sidebar e footer
 
 st.set_page_config(initial_sidebar_state='collapsed')
 st.markdown(

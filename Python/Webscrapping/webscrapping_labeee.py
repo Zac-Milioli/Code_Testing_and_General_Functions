@@ -1,7 +1,7 @@
 import pandas as pd 
 import requests
 from bs4 import BeautifulSoup
-path = r'GeneralPython/API&Pandas/'
+path = r'Python/Webscrapping/'
 
 link = 'https://labeee.ufsc.br/pt-br/sobre/pesquisadores'
 headers = {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36 OPR/102.0.0.0'}

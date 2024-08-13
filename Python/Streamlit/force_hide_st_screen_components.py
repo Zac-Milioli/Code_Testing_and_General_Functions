@@ -1,5 +1,5 @@
 import streamlit as st
-# Esconde os itens do cabeçalho, sidebar e footer
+# Esconde os itens do cabeçalho, sidebar e footer e próprio cabeçalho
 
 st.set_page_config(initial_sidebar_state='collapsed')
 st.markdown(
@@ -10,6 +10,9 @@ st.markdown(
     }
     [data-testid="stToolbarActions"] {
         display: none
+    }
+    [data-testid="stHeader"] {
+        display: none;
     }
     #MainMenu {visibility: hidden;}
     footer {visibility: hidden;}

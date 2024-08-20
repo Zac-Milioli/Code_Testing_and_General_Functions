@@ -1,3 +1,7 @@
+#   IMPORTANTE
+# A conexão via GSheetsConnection parece funcionar
+# apenas com versões antigas do Streamlit, especificamente 1.29.0
+
 import streamlit as st
 # Próprio do streamlit para fazer query SQL dentro da planilha google sheets ou retorná-la
 from streamlit_gsheets import GSheetsConnection

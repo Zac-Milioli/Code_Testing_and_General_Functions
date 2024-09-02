@@ -1,0 +1,26 @@
+use sistema_de_gestao_de_projetos
+
+db.projetos.updateMany(
+    { "nome": "Projeto A" },
+    { $set: { "equipe": [1, 2, 4] } }
+)
+
+db.projetos.updateMany(
+    { "nome": "Projeto B" },
+    { $set: { "equipe": [3, 6, 7] } }
+)
+
+db.projetos.updateMany(
+    { "nome": "Projeto C" },
+    { $set: { "equipe": [5, 8, 1] } }
+)
+
+db.projetos.updateMany(
+    { "nome": "Projeto D" },
+    { $set: { "equipe": [2, 4, 7] } }
+)
+
+db.projetos.updateMany(
+    { "nome": "Projeto E" },
+    { $set: { "equipe": [3, 6, 8] } }
+)

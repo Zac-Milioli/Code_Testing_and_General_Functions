@@ -1,0 +1,39 @@
+use sistema_de_gestao_de_projetos
+
+db.projetos.insertMany([
+    {
+        "nome": "Projeto A",
+        "cliente": "Cliente A",
+        "inicio": "10/01/2024",
+        "fim": "01/06/2024",
+        "equipe": ["João", "Maria", "Ana"]
+    },
+    {
+        "nome": "Projeto B",
+        "cliente": "Cliente B",
+        "inicio": "15/02/2024",
+        "fim": "20/07/2024",
+        "equipe": ["Carlos", "Fernanda", "Rodrigo"]
+    },
+    {
+        "nome": "Projeto C",
+        "cliente": "Cliente C",
+        "inicio": "01/03/2024",
+        "fim": "15/08/2024",
+        "equipe": ["Pedro", "Patrícia", "João"]
+    },
+    {
+        "nome": "Projeto D",
+        "cliente": "Cliente D",
+        "inicio": "25/01/2024",
+        "fim": "30/06/2024",
+        "equipe": ["Maria", "Ana", "Rodrigo"]
+    },
+    {
+        "nome": "Projeto E",
+        "cliente": "Cliente E",
+        "inicio": "10/04/2024",
+        "fim": "05/09/2024",
+        "equipe": ["Carlos", "Fernanda", "Patrícia"]
+    }
+])

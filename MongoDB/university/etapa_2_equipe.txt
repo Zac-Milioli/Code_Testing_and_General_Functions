@@ -1,0 +1,12 @@
+use sistema_de_gestao_de_projetos
+
+db.equipe.insertMany([
+    { "_id": 1, "nome": "João", "cargo": "Dev" },
+    { "_id": 2, "nome": "Maria", "cargo": "Dev" },
+    { "_id": 3, "nome": "Carlos", "cargo": "Analista" },
+    { "_id": 4, "nome": "Ana", "cargo": "Gerente" },
+    { "_id": 5, "nome": "Pedro", "cargo": "Tester" },
+    { "_id": 6, "nome": "Fernanda", "cargo": "Front-end" },
+    { "_id": 7, "nome": "Rodrigo", "cargo": "Arquiteto" },
+    { "_id": 8, "nome": "Patrícia", "cargo": "Designer" }
+])

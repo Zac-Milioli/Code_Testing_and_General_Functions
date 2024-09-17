@@ -1,0 +1,6 @@
+Escolhi colocar o histórico de alterações dentro do próprio documento do projeto porque é mais simples e fácil de acessar.
+Assim, tudo que aconteceu no projeto fica num só lugar, sem precisar buscar em outra coleção.
+
+Essa forma de guardar o histórico é boa porque dá para ver todas as mudanças rapidamente e facilita a vida de quem está trabalhando no projeto.
+No entanto, se o projeto tiver muitas alterações, o documento pode ficar um pouco grande, mas como é um sistema mais simples, isso não deve ser um problema.
+A ideia é manter tudo fácil de usar e direto ao ponto.

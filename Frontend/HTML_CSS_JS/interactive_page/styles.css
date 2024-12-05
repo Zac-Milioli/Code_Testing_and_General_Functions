@@ -1,0 +1,34 @@
+
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h1 {
+    color: white;
+    background-color: black;
+    padding: 30px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.user-inputs {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+label {
+    padding: 20px;
+}
+
+input {
+    padding: 10px;
+    border-radius: 20px;
+    background-color: rgb(200, 200, 200);
+}
+
+input:focus {
+    background-color: white;
+}

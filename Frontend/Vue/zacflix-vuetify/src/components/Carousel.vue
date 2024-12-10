@@ -1,18 +1,16 @@
 <template>
-    <div onclick="alert('Clicou no carrossel')">
-        <v-carousel hide-delimiters cycle="4">
-            <v-carousel-item v-for="(item, i) in items" :key="i" :src="item.src" cover>
-                <div class="d-flex fill-height flex-column justify-end align-start gradient-overlay">
-                    <div class="text-h2 ml-12">
-                        TÍTULO TESTE
-                    </div>
-                    <div class="text-h4 mb-16 ml-12 mt-5">
-                        Descrição teste
-                    </div>
+    <v-carousel hide-delimiters cycle="4">
+        <v-carousel-item onclick="alert('Clicou no carrossel')" v-for="(item, i) in items" :key="i" :src="item.src" cover>
+            <div class="d-flex fill-height flex-column justify-end align-start gradient-overlay">
+                <div class="text-h2 ml-12">
+                    TÍTULO TESTE
                 </div>
-            </v-carousel-item>
-        </v-carousel>
-    </div>
+                <div class="text-h4 mb-16 ml-12 mt-5">
+                    Descrição teste
+                </div>
+            </div>
+        </v-carousel-item>
+    </v-carousel>
 </template>
 
 <script setup>

@@ -1,6 +1,6 @@
 <template>
   <VAppBar height="150" color="black">
-    <div class="d-flex align-center justify-space-between ma-10 fill-height">
+    <div class="d-flex align-center justify-space-between ma-10 fill-height w-100">
       <div class="d-flex align-center">
         <VAppBarNavIcon class="mb-5" href="#">
           <img src="../assets/zacflix-logo.png" width="60" />
@@ -24,3 +24,7 @@
 <script setup>
 //
 </script>
+
+
+<style>
+</style>

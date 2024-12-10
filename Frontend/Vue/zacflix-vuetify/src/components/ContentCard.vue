@@ -1,8 +1,8 @@
 <template>
-  <div class="ma-10" onclick="alert('clicou no card')">
+  <div class="ma-2">
     <v-hover v-slot="{ isHovering, props }">
-      <v-card class="mx-auto" max-width="344" v-bind="props" @click="alert('clicou no card')">
-        <v-img :src="card.src"></v-img>
+      <v-card class="mx-auto fixed-card" v-bind="props" @click="alert('clicou no card')">
+        <v-img :src="card.src" class="w-100 fixed-card-img"></v-img>
 
         <v-card-text>
           <h2 class="text-h6 text-primary">
@@ -12,9 +12,8 @@
         </v-card-text>
 
         <v-card-title>
-          <v-rating :model-value="card.stars" background-color="orange" class="me-2" color="orange" dense
-            hover></v-rating>
-          <span class="text-primary text-subtitle-2">Avaliação</span>
+          <v-rating :model-value="card.stars" background-color="orange" class="me-2" color="orange" dense hover></v-rating>
+          <span class="text-primary text-subtitle-2">Nota {{ card.stars }}</span>
         </v-card-title>
 
         <v-overlay :model-value="!!isHovering" class="align-center justify-center" scrim="#036358" contained>
@@ -33,11 +32,22 @@ const props = defineProps({
     type: Object,
     required: true,
     default: () => ({
-      src: 'https://occ-0-3824-185.1.nflxso.net/dnm/api/v6/Qs00mKCpRvrkl3HZAN5KwEL1kpE/AAAABbdxecs38o67BVh4u1744XPBp6oA178-ESc2P6anlfeF21ydUOpy6DaxyQVuOhrgpxRQHNo0Fddasvr3rztuZZR63McpZVPB1kE.jpg?r=2ac',
-      title: 'Aqui vai o título',
-      desc: 'Aqui vai a descrição',
+      src: 'https://th.bing.com/th/id/R.113e1056fd3d22db0495032cb9d819b0?rik=cI3TUWDI6LKivA&pid=ImgRaw&r=0&sres=1&sresct=1',
+      title: 'Título',
+      desc: 'Descrição',
       stars: 0
     })
   }
 });
 </script>
+
+<style scoped>
+.fixed-card {
+  width: 344px;
+  height: 355px;
+}
+
+.fixed-card-img {
+  height: 196px;
+}
+</style>

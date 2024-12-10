@@ -13,8 +13,11 @@
         <VBtn href="#series" class="ml-15">
           Séries
         </VBtn>
-        <VBtn href="#filmes" class="ml-2">
+        <VBtn href="#movies" class="ml-2">
           Filmes
+        </VBtn>
+        <VBtn href="#all" class="ml-2">
+          Catálogo completo
         </VBtn>
       </div>
     </div>

@@ -1,12 +1,12 @@
 <template>
     <v-carousel hide-delimiters cycle="4">
-        <v-carousel-item onclick="alert('Clicou no carrossel')" v-for="(item, i) in items" :key="i" :src="item.src" cover>
+        <v-carousel-item v-for="(item, i) in items" :key="i" :src="item.src" cover>
             <div class="d-flex fill-height flex-column justify-end align-start gradient-overlay">
                 <div class="text-h2 ml-12">
-                    TÍTULO TESTE
+                    {{ item.title }}
                 </div>
                 <div class="text-h4 mb-16 ml-12 mt-5">
-                    Descrição teste
+                    {{ item.desc }}
                 </div>
             </div>
         </v-carousel-item>
@@ -14,15 +14,29 @@
 </template>
 
 <script setup>
-const items = [
-    { src: 'https://cdn.vuetifyjs.com/images/carousel/squirrel.jpg' },
-    { src: 'https://cdn.vuetifyjs.com/images/carousel/sky.jpg' },
-    { src: 'https://cdn.vuetifyjs.com/images/carousel/bird.jpg' },
-    { src: 'https://cdn.vuetifyjs.com/images/carousel/planet.jpg' }
-]
+import { defineProps } from 'vue';
+
+const props = defineProps({
+    items: {
+        type: Array,
+        required: true,
+        default: () => ([
+            {
+                src: 'https://th.bing.com/th/id/R.113e1056fd3d22db0495032cb9d819b0?rik=cI3TUWDI6LKivA&pid=ImgRaw&r=0&sres=1&sresct=1',
+                title: 'Título',
+                desc: 'Descrição'
+            },
+            {
+                src: 'https://th.bing.com/th/id/R.113e1056fd3d22db0495032cb9d819b0?rik=cI3TUWDI6LKivA&pid=ImgRaw&r=0&sres=1&sresct=1',
+                title: 'Título 2',
+                desc: 'Descrição 2'
+            }
+        ])
+    }
+});
 </script>
 
-<style>
+<style scoped>
 .gradient-overlay {
     position: relative;
 }

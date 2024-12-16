@@ -1,21 +1,21 @@
 <template>
   <div class="ma-2">
     <v-hover v-slot="{ isHovering, props }">
-      <v-card class="mx-auto fixed-card" v-bind="props" @click="alert('clicou no card')">
+      <v-card class="mx-auto fixed-card" v-bind="props">
         <v-img :src="card.src" class="w-100 fixed-card-img"></v-img>
-
+        
         <v-card-text>
           <h2 class="text-h6 text-primary">
             {{ card.title }}
           </h2>
           {{ card.desc }}
         </v-card-text>
-
+        
         <v-card-title>
           <v-rating :model-value="card.stars" background-color="orange" class="me-2" color="orange" dense hover></v-rating>
           <span class="text-primary text-subtitle-2">Nota {{ card.stars }}</span>
         </v-card-title>
-
+        
         <v-overlay :model-value="!!isHovering" class="align-center justify-center" scrim="#036358" contained>
           <v-btn variant="flat">Ver mais</v-btn>
         </v-overlay>

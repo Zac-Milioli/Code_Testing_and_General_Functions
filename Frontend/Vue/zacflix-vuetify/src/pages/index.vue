@@ -1,65 +1,58 @@
 <template>
-
-  <header>
-    <NavBar />
-  </header>
-
-  <body class="bg-black">
-    <div>
+    <header>
+      <NavBar />
+    </header>
+    
+    <body class="bg-black">
       <Carousel :items="carouselData"/>
-    </div>
-    
-    <div id="series">
-      <div class="text-h4 ml-10 mt-10">
-        Séries
-      </div>
-      <div class="d-flex">
-        <div v-for="item in cardSeries">
-          <ContentCard class="ma-5" :card="item" />
+      
+      <div id="series">
+        <div class="text-h4 ml-10 mt-10">
+          Séries
         </div>
+        <v-infinite-scroll direction="horizontal">
+          <div v-for="item in cardSeries" @load="load">
+            <ContentCard class="ma-5" :card="item"/>
+          </div>
+          <template v-slot:loading />
+        </v-infinite-scroll>
       </div>
-    </div>
-
-    <div id="movies">
-      <div class="text-h4 ml-10 mt-10">
-        Filmes
-      </div>
-      <div class="d-flex">
-        <div v-for="item in cardMovies">
-          <ContentCard class="ma-5" :card="item" />
+      
+      <div id="movies">
+        <div class="text-h4 ml-10 mt-10">
+          Filmes
         </div>
+        <v-infinite-scroll direction="horizontal">
+          <div v-for="item in cardMovies">
+            <ContentCard class="ma-5" :card="item" />
+          </div>
+          <template v-slot:loading />
+        </v-infinite-scroll>
       </div>
-    </div>
-    
-    <div id="all">
-      <div class="text-h4 ml-10 mt-10 mb-5">
-        Acervo Completo
+      
+      <div id="all">
+        <div class="text-h4 ml-10 mt-10 mb-5">
+        Catálogo Completo
       </div>
       <v-container>
-          <v-row>
-            <div v-for="item in cardSeries">
-              <ContentCard :card="item" />
-            </div>
-            <div v-for="item in cardMovies">
-              <ContentCard :card="item" />
-            </div>
-          </v-row>
+        <v-row>
+          <div v-for="item in cardSeries">
+            <ContentCard :card="item" />
+          </div>
+          <div v-for="item in cardMovies">
+            <ContentCard :card="item" />
+          </div>
+        </v-row>
       </v-container>
     </div>
-      
   </body>
+  
+  <footer>
+    <Footer />
+  </footer>
 </template>
 
 <script setup>
-import ContentCard from '@/components/ContentCard.vue';
-
-const cardDataTest = {
-  src: 'https://occ-0-3824-185.1.nflxso.net/dnm/api/v6/Qs00mKCpRvrkl3HZAN5KwEL1kpE/AAAABbdxecs38o67BVh4u1744XPBp6oA178-ESc2P6anlfeF21ydUOpy6DaxyQVuOhrgpxRQHNo0Fddasvr3rztuZZR63McpZVPB1kE.jpg?r=2ac',
-  title: 'Beleza Verdadeira',
-  desc: 'Dorama',
-  stars: 4
-};
-
 const cardSeries = [
   {
     src: 'https://occ-0-3824-185.1.nflxso.net/dnm/api/v6/Qs00mKCpRvrkl3HZAN5KwEL1kpE/AAAABbdxecs38o67BVh4u1744XPBp6oA178-ESc2P6anlfeF21ydUOpy6DaxyQVuOhrgpxRQHNo0Fddasvr3rztuZZR63McpZVPB1kE.jpg?r=2ac',
@@ -202,7 +195,7 @@ const carouselData = [
     {
         src: 'https://assets.nflxext.com/ffe/siteui/vlv3/158a0e2a-cca4-40f5-86b8-11ea2a281b06/web_collection/BR-pt-20241202-TRIFECTA-fc4a2711-5d9f-4bd0-b2bd-c9e24ab06fdb_large.jpg',
         title: 'ZacFlix: Séries e Filmes',
-        desc: 'Na verdade aqui não tem nada, é meio que um asset flip só pra aprender Vuetify'
+        desc: 'Na verdade aqui não tem nada, é meio que um asset flip só pra aprender Vue e Vuetify'
     },
     {
         src: 'https://assets.nflxext.com/ffe/siteui/vlv3/522bb1bd-bd7a-4b41-9331-3350f25c97fc/web_collection/BR-pt-20241202-TRIFECTA-00b67504-679d-49d3-b1b7-f0fb69a5d4f8_large.jpg',
@@ -222,7 +215,7 @@ const carouselData = [
     {
         src: 'https://assets.nflxext.com/ffe/siteui/vlv3/9ce12859-9333-4eb1-b50c-d33d8e3d07cb/web_collection/BR-pt-20241202-TRIFECTA-0004a270-edae-4a1d-b8c1-6caf5b446cd6_large.jpg',
         title: 'Interface moderna e responsiva',
-        desc: 'Vou concordar com esse, mas deu trabalho viu (e ainda não ficou tão bom)'
+        desc: 'Vou concordar com esse, deu um trabalho'
     },
-]
+];
 </script>

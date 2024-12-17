@@ -1,14 +1,16 @@
 <template>
     <v-carousel hide-delimiters cycle="4">
-        <v-carousel-item v-for="(item, i) in items" :key="i" :src="item.src" cover>
-            <div class="d-flex fill-height flex-column justify-end align-start gradient-overlay">
-                <div class="text-h2 ml-12">
-                    {{ item.title }}
+        <v-carousel-item v-for="(item, i) in items" :key="i">
+            <v-parallax :src="item.src" height="500">
+                <div class="d-flex fill-height flex-column justify-end align-start gradient-overlay">
+                    <div class="text-h2 ml-12">
+                        {{ item.title }}
+                    </div>
+                    <div class="text-h4 mb-16 ml-12 mt-5">
+                        {{ item.desc }}
+                    </div>
                 </div>
-                <div class="text-h4 mb-16 ml-12 mt-5">
-                    {{ item.desc }}
-                </div>
-            </div>
+            </v-parallax>
         </v-carousel-item>
     </v-carousel>
 </template>

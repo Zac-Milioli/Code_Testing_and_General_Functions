@@ -1,55 +1,59 @@
 <template>
-    <header>
-      <NavBar />
-    </header>
-    
-    <body class="bg-black">
-      <Carousel :items="carouselData"/>
-      
-      <div id="series">
-        <div class="text-h4 ml-10 mt-10">
-          Séries
-        </div>
-        <v-infinite-scroll direction="horizontal">
-          <div v-for="item in cardSeries" @load="load">
-            <ContentCard class="ma-5" :card="item"/>
-          </div>
-          <template v-slot:loading />
-        </v-infinite-scroll>
+  <header>
+    <NavBar />
+  </header>
+
+  <body class="bg-black">
+    <div>
+      <Carousel :items="carouselData" />
+    </div>
+
+    <div id="series">
+      <div class="text-h4 ml-10 mt-10">
+        Séries
       </div>
-      
-      <div id="movies">
-        <div class="text-h4 ml-10 mt-10">
-          Filmes
+      <div class="d-flex">
+        <div v-for="item in cardSeries" :key="item.title">
+          <ContentCard class="ma-5" :card="item" @show-overlay="showOverlay" />
         </div>
-        <v-infinite-scroll direction="horizontal">
-          <div v-for="item in cardMovies">
-            <ContentCard class="ma-5" :card="item" />
-          </div>
-          <template v-slot:loading />
-        </v-infinite-scroll>
       </div>
-      
-      <div id="all">
-        <div class="text-h4 ml-10 mt-10 mb-5">
+    </div>
+
+    <div id="movies">
+      <div class="text-h4 ml-10 mt-10">
+        Filmes
+      </div>
+      <div class="d-flex">
+        <div v-for="item in cardMovies" :key="item.title">
+          <ContentCard class="ma-5" :card="item" @show-overlay="showOverlay" />
+        </div>
+      </div>
+    </div>
+
+    <div id="all">
+      <div class="text-h4 ml-10 mt-10 mb-5">
         Catálogo Completo
       </div>
       <v-container>
         <v-row>
-          <div v-for="item in cardSeries">
-            <ContentCard :card="item" />
+          <div v-for="item in cardSeries" :key="item.title">
+            <ContentCard :card="item" @show-overlay="showOverlay" />
           </div>
-          <div v-for="item in cardMovies">
-            <ContentCard :card="item" />
+          <div v-for="item in cardMovies" :key="item.title">
+            <ContentCard :card="item" @show-overlay="showOverlay" />
           </div>
         </v-row>
       </v-container>
     </div>
   </body>
-  
+
   <footer>
     <Footer></Footer>
   </footer>
+
+  <v-dialog v-model="dialog" width="auto" transition="dialog-bottom-transition">
+    <PopupCard :card="selectedCard" />
+  </v-dialog>
 </template>
 
 <script setup>
@@ -192,30 +196,48 @@ const cardMovies = [
 ]
 
 const carouselData = [
-    {
-        src: 'https://assets.nflxext.com/ffe/siteui/vlv3/158a0e2a-cca4-40f5-86b8-11ea2a281b06/web_collection/BR-pt-20241202-TRIFECTA-fc4a2711-5d9f-4bd0-b2bd-c9e24ab06fdb_large.jpg',
-        title: 'ZacFlix: Séries e Filmes',
-        desc: 'Na verdade aqui não tem nada, é meio que um asset flip só pra aprender Vue e Vuetify'
-    },
-    {
-        src: 'https://assets.nflxext.com/ffe/siteui/vlv3/522bb1bd-bd7a-4b41-9331-3350f25c97fc/web_collection/BR-pt-20241202-TRIFECTA-00b67504-679d-49d3-b1b7-f0fb69a5d4f8_large.jpg',
-        title: 'Website feito para você',
-        desc: 'Na verdade vai pro meu currículo'
-    },
-    {
-        src: 'https://assets.nflxext.com/ffe/siteui/vlv3/fdcaf638-4ea0-4335-9cdb-a044f97cf39f/web_collection/BR-pt-20241202-TRIFECTA-dbf8d4d2-8f3c-44a2-a083-fdfda3d48a0f_large.jpg',
-        title: 'Variedade para toda a família',
-        desc: 'Eu só assisto anime e dorama, então praticamente só tem isso em séries'
-    },
-    {
-        src: 'https://assets.nflxext.com/ffe/siteui/vlv3/0cc52fea-b37f-493d-b440-3c7aee3a9043/web_collection/BR-pt-20241202-TRIFECTA-77e39a44-90b9-4146-a8eb-17ebb13f0aad_large.jpg',
-        title: 'Conteúdo original',
-        desc: 'Peguei todas as imagens diretamente da Netflix, não tem nada original além do código'
-    },
-    {
-        src: 'https://assets.nflxext.com/ffe/siteui/vlv3/9ce12859-9333-4eb1-b50c-d33d8e3d07cb/web_collection/BR-pt-20241202-TRIFECTA-0004a270-edae-4a1d-b8c1-6caf5b446cd6_large.jpg',
-        title: 'Interface moderna e responsiva',
-        desc: 'Vou concordar com esse, deu um trabalho'
-    },
+  {
+    src: 'https://assets.nflxext.com/ffe/siteui/vlv3/158a0e2a-cca4-40f5-86b8-11ea2a281b06/web_collection/BR-pt-20241202-TRIFECTA-fc4a2711-5d9f-4bd0-b2bd-c9e24ab06fdb_large.jpg',
+    title: 'ZacFlix: Séries e Filmes',
+    desc: 'Na verdade aqui não tem nada, é meio que um asset flip só pra aprender Vue e Vuetify'
+  },
+  {
+    src: 'https://assets.nflxext.com/ffe/siteui/vlv3/522bb1bd-bd7a-4b41-9331-3350f25c97fc/web_collection/BR-pt-20241202-TRIFECTA-00b67504-679d-49d3-b1b7-f0fb69a5d4f8_large.jpg',
+    title: 'Website feito para você',
+    desc: 'Na verdade vai pro meu currículo'
+  },
+  {
+    src: 'https://assets.nflxext.com/ffe/siteui/vlv3/fdcaf638-4ea0-4335-9cdb-a044f97cf39f/web_collection/BR-pt-20241202-TRIFECTA-dbf8d4d2-8f3c-44a2-a083-fdfda3d48a0f_large.jpg',
+    title: 'Variedade para toda a família',
+    desc: 'Eu só assisto anime e dorama, então praticamente só tem isso em séries'
+  },
+  {
+    src: 'https://assets.nflxext.com/ffe/siteui/vlv3/0cc52fea-b37f-493d-b440-3c7aee3a9043/web_collection/BR-pt-20241202-TRIFECTA-77e39a44-90b9-4146-a8eb-17ebb13f0aad_large.jpg',
+    title: 'Conteúdo original',
+    desc: 'Peguei todas as imagens diretamente da Netflix, não tem nada original além do código'
+  },
+  {
+    src: 'https://assets.nflxext.com/ffe/siteui/vlv3/9ce12859-9333-4eb1-b50c-d33d8e3d07cb/web_collection/BR-pt-20241202-TRIFECTA-0004a270-edae-4a1d-b8c1-6caf5b446cd6_large.jpg',
+    title: 'Interface moderna e responsiva',
+    desc: 'Vou concordar com esse, deu um trabalho'
+  },
 ];
+
+const dialog = ref(false);
+const selectedCard = ref({});
+
+const showOverlay = (card) => {
+  selectedCard.value = card;
+  dialog.value = true;
+};
+</script>
+
+<script>
+export default {
+  data() {
+    return {
+      dialog: false,
+    }
+  },
+};
 </script>

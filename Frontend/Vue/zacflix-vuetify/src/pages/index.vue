@@ -48,7 +48,7 @@
   </body>
   
   <footer>
-    <Footer />
+    <Footer></Footer>
   </footer>
 </template>
 

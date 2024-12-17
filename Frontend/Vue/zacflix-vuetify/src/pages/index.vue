@@ -163,7 +163,7 @@ const cardMovies = [
     src: 'https://occ-0-3824-185.1.nflxso.net/dnm/api/v6/Qs00mKCpRvrkl3HZAN5KwEL1kpE/AAAABU_kI_8yE_yMz5vUfSoU3DUZ4gQyjbqq0rluXGk1ab0mEBDUNtcIeSOuDe8to1Q00v9tOC81dDwBUngxAgJKBX2oMVXVmTplPmAHbNP0usF51fOGXtTGcsciLxs1-kK1wDfL.jpg?r=d54',
     title: 'Donzela',
     desc: 'Ação e Aventura',
-    stars: 2
+    stars: 1
   },
   {
     src: 'https://occ-0-3824-185.1.nflxso.net/dnm/api/v6/Qs00mKCpRvrkl3HZAN5KwEL1kpE/AAAABaKozK53norgbS8RtJKpexUlakpYM_H3hdk9jVaqmWehbOUpD1FQ40crDy46yYB9bchxMUEceeEJxaSbMz-bTKq24VtPNQ332po.jpg?r=6af',

@@ -10,13 +10,13 @@
         </VAppBarNavTitle>
       </div>
       <div class="d-flex align-center">
-        <VBtn href="#series" class="ml-15">
+        <VBtn href="#series" class="ml-15" variant="plain">
           Séries
         </VBtn>
-        <VBtn href="#movies" class="ml-2">
+        <VBtn href="#movies" class="ml-2" variant="plain">
           Filmes
         </VBtn>
-        <VBtn href="#all" class="ml-2">
+        <VBtn href="#all" class="ml-2" variant="plain">
           Catálogo completo
         </VBtn>
       </div>

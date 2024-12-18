@@ -28,10 +28,10 @@ const props = defineProps({
         type: Object,
         required: true,
         default: () => ({
-            src: '',
-            title: '',
-            desc: '',
-            stars: 0
+            src: 'https://th.bing.com/th/id/R.113e1056fd3d22db0495032cb9d819b0?rik=cI3TUWDI6LKivA&pid=ImgRaw&r=0&sres=1&sresct=1',
+            title: 'Título',
+            desc: 'Descrição',
+            stars: 0,
         })
     }
 });

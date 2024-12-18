@@ -51,7 +51,10 @@
     <Footer></Footer>
   </footer>
 
-  <v-dialog v-model="dialog" width="auto" transition="dialog-bottom-transition">
+  <v-dialog v-model="dialog" transition="dialog-bottom-transition">
+    <v-btn icon="mdi-arrow-left-bold-circle-outline" variant="elevated" size="x-large" color="black" @click="hideOverlay">
+      <v-icon icon="mdi-arrow-left-bold-circle-outline" size="x-large"></v-icon>
+    </v-btn>
     <PopupCard :card="selectedCard" />
   </v-dialog>
 </template>
@@ -229,6 +232,11 @@ const selectedCard = ref({});
 const showOverlay = (card) => {
   selectedCard.value = card;
   dialog.value = true;
+};
+
+const hideOverlay = () => {
+  selectedCard.value = {};
+  dialog.value = false;
 };
 </script>
 

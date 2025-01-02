@@ -5,10 +5,10 @@ import java.util.ArrayList;
 // this == self
 
 public class Person{
-    // attr accessor
+    // attr
     public String name;
     public ArrayList<Item> inventory = new ArrayList<Item>();
-    // Atributo privado. Equivale ao _ e __ do python
+    // Atributo privado. Semelhante ao _ e __ do python
     private LocalDate registerDate;
 
     // Construtor, init, inicializador

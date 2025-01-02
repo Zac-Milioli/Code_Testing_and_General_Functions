@@ -1,5 +1,5 @@
 public class Item{
-    // attr accessor
+    // attr
     public String name;
     public String description;
 

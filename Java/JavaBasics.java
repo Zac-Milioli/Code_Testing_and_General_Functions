@@ -40,16 +40,15 @@ class JavaBasics{
         // Cria uma string literal
         String frase1 = "Exemplo da primeira forma";
         String frase1_alt = "Exemplo da primeira forma";
+        System.out.println(frase1);
+        System.out.println(frase1 == frase1_alt);
         // Cria um novo objeto string, portanto, mesmo que existe dois objetos string com
         // o mesmo valor, eles não serão iguais
         String frase2 = new String("Exemplo da segunda forma");
         String frase2_alt = new String("Exemplo da segunda forma");
-
-        System.out.println(frase1);
         System.out.println(frase2);
-
-        System.out.println(frase1 == frase1_alt);
         System.out.println(frase2 == frase2_alt);
+
         // Porém, caso a comparação seja feita usando o método equals, apenas o valor literal é comparado
         System.out.println(frase2.equals(frase2_alt));
         // Inclusive ignorando letras maíusculas e minúsculas
@@ -121,28 +120,29 @@ class JavaBasics{
         scanner.nextLine();
         System.out.print("\nINSIRA UMA STRING PARA CONVERTER PARA INT: ");
         // As conversões são sempre feitas chamando o tipo de variável em
-        // pascal case, seguido da função parse com o nome do tipo em camel case
+        // PascalCase, seguido da função parse com o nome do tipo em camelCase
         int int_convertido = Integer.parseInt(scanner.nextLine());
         System.out.println(int_convertido);
 
+        // Repetições
         System.out.println("\n".repeat(60));
-
         System.out.println("Calculadora");
         System.out.println("Digite dois valores");
         System.out.println("- ".repeat(45));
-
-        System.out.print("- ");
+        
+        System.out.print("... ");
         double num1 = scanner.nextDouble();
         scanner.nextLine();
         
-        System.out.print("- ");
+        System.out.print("... ");
         double num2 = scanner.nextDouble();
         scanner.nextLine();
         
         System.out.println("\nDigite o operador");
-        System.out.print("- ");
+        System.out.print("... ");
         String operator = scanner.nextLine();
 
+        // Condicionais e operações
         if (operator.equals("+")){
             System.out.printf("%f + %f = %f", num1, num2, num1+num2);
         } else if (operator.equals("-")){
@@ -328,7 +328,7 @@ class JavaBasics{
         estoque.put("Farinha", 20);
         estoque.put("Pão", 9);
         // Alternativamente, itens podem ser incluidos APENAS se ainda não existirem no HashMap usando putIfAbsent
-        // Caso o item exista, a função é skipada
+        // Caso o item exista, a função é ignorada
         estoque.putIfAbsent("Feijão", 10);
         estoque.putIfAbsent("Macarrão", 8);
         // O valor das chaves pode ser atualizado ou alterado utilizando o método replace
@@ -350,7 +350,7 @@ class JavaBasics{
         System.out.println(estoque.containsValue(Integer.valueOf(16)));
         // Pode verificar se o hashmap é vazio usando a função isEmpty
         System.out.println(estoque.isEmpty());
-        // Loop que precorre o hashmap tal qual "for key, value in hashmap:"
+        // Loop que precorre o hashmap tal qual "for key, value in hashmap.items()"
         estoque.forEach((key, value) -> {
             System.out.println(key + " na quantidade " + value);
             estoque.replace(key, value+5);
